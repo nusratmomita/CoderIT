@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderIt</title>
+
+    <!-- tailwindCSS setup -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+
+    <!-- for video popup -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+
+    <!-- swiper  -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inter-font">
+    <header>
+        <!-- header top-->
+        <div class="bg-[#191A19]">
+            <h3 class="text-[#D8E9A8] text-xl font-[500] text-center py-2">GET 20% OFF ON EVERY FRIDAY ON EVERY DEAL !</h3>
+        </div>
+        <!-- header down -->
+        <div id="stickyHeader">
+
+            <!-- to blur the bg -->
+            <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+
+            <!-- logo + navlinks -->
+            <div class="container debugg">
+                <div class="flex gap-30 justify-between items-center">
+                    <!-- logo(main) -->
+                    <div class="flex items-center cursor-pointer lg:-ml-6">
+                        <a href="#">
+                            <img  class="glenicLogoBlack w-20 h-20" src="./assets/coderITLogo.png" alt="blackLogoGlenic">
+                        </a>
+                        <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
+                    </div>
+    
+                    <!-- navlinks -->
+                    <div class="hidden lg:block submenu">
+                        <ul class=" flex gap-[25px] justify-center items-center navLinks">
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Home</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">About us</a></li>
+                            <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
+                                <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[220px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
+                                    <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- demo btn -->
+                    <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8]">
+                        <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19]">Get a Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- banner section -->
+        <div class="swiper hero_banner_slider">
+            <div class="swiper-wrapper">
+                <!-- slider 1 -->
+                <div class="swiper-slide ">
+                    <div class="container flex justify-between items-center">
+                        <!-- left side text -->
+                        <div class="w-[50%]">
+                            <div class="flex items-center gap-2">
+                                <!-- stars -->
+                                <div>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star-half text-[#014e01]"></i>
+                                </div>
+                                <h3 class="text-xl font-[500] text-[#191A19] text-center">On an <span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
+                            </div>
+                            <h2 class="text-[50px] leading-[50px] font-[500] montserrat-font mt-4">Smart Website for Seamless Workflow.</h2>
+                            <p class="text-2xl font-[500] mt-4">We build powerful software that helps companies work smarter everywhere.</p>
+    
+                            <div class="flex gap-2 mt-4">
+                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8]">
+                                    <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] pt-2 font-[600]">Try now!</button>
+                                </div>
+                                <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19]">
+                                    <button class="text-[#191A19] px-8 py-1.5 cursor-pointer hover:text-[#D8E9A8] pt-2 flex gap-2 justify-center items-center font-[600]">View Projects<i class="fa-solid fa-reply-all"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right side image -->
+                        <div class="w-[50%]">
+                            <img src="./assets/webDev.png" alt="webDev">
+                        </div>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div class="swiper-slide mt-15">
+                    <div class="container flex justify-between items-center">
+                        <!-- left side text -->
+                        <div class="w-[50%]">
+                            <div class="flex items-center gap-2">
+                                <!-- stars -->
+                                <div>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star text-[#014e01]"></i>
+                                    <i class="fa-solid fa-star-half text-[#014e01]"></i>
+                                </div>
+                                <h3 class="text-xl font-[500] text-[#191A19] text-center">On an <span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
+                            </div>
+                            <h2 class="text-[50px] leading-[50px] font-[500] montserrat-font mt-4">Smart Apps for Seamless Workflow.</h2>
+                            <p class="text-2xl font-[500] mt-4">We build powerful software that helps companies work smarter everywhere.</p>
+
+                            <div class="flex gap-2 mt-4">
+                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8]">
+                                    <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] pt-2 font-[600]">Try now!</button>
+                                </div>
+                                <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19]">
+                                    <button class="text-[#191A19] px-8 py-1.5 cursor-pointer hover:text-[#D8E9A8] pt-2 flex gap-2 justify-center items-center font-[600]">View Projects<i class="fa-solid fa-reply-all"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right side image -->
+                        <div class="w-[50%]">
+                            <img class="ml-40 mt-8" src="./assets/appDev.png" alt="webDev">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+
+        <!-- about us -->
+        <div class="mt-[120px] mb-100">
+            <div class="container flex justify-center items-center">
+                <!-- left side image -->
+                <div class="relative w-[50%]">
+                    <img class="w-120  h-140 object-cover relative z-50" src="./assets/teamWork.jpg" alt="teamWork">
+                    <img class="absolute -top-15 left-20 z-0" src="./assets/squareBlue.png" alt="squareBlue">
+                </div>
+                <!-- right side text -->
+                <div class=" w-[50%]">
+                    <div class="bg-[#191A19] w-57 rounded-md">
+                        <h3 class="text-[#D8E9A8] px-3 py-3 whitespace-nowrap text-xl font-[400] text-center montserrat-font">About Our Company</h3>
+                    </div>
+                    <h3 class="mt-2 text-3xl text-[#191A19] font-[500] montserrat-font">Choose The <span class="text-[#014e01]">Best It</span> Service <br> In the Town</h3>
+                    <div class="mt-5 flex gap-3">
+                       <div class="relative h-35 w-4px">
+                            <div class="absolute left-0 top-0 -translate-x-1/2 h-full w-px bg-green-900"></div>
+                        </div>
+                        <div>
+                            <h3>Hinc intellegebat ex eos, pro duis vidit graecis at, adhuc dolor consectetuer has at. Libris laboramus an eos, invidunt temporibus ut mel, illud urbanitas in eos. Eos no illud atqui,invidunt temporibus ut mel, illud urbanitas in eos. Eos no illud atqui, pri dicunt explicari interpretaris ne, no sit harum meliore. Esse cibo officiis ea nec.</h3>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-3">
+                        <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <h4>ABC Tower, NYC</h4>
+                        </div>
+                        <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
+                            <i class="fa-solid fa-message"></i>
+                            <h4>abc@tower.com</h4>
+                        </div>
+                        <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
+                            <i class="fa-solid fa-phone"></i>
+                            <h4>+123-456-789</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- for sliders -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- connecting js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

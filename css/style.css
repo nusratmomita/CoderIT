@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* dark green -> 014e01/191A19 , medium green -> 1E5128, light green -> 4E9F3D and yellowish -> D8E9A8 */
+
+
+/* heading */
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+}
+/* rest */
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+
+.container{
+    max-width: 1220px;
+    margin: auto;
+}
+
+.debug{
+  border: 2px solid red;
+}
+
+.submenu > ul > li:hover > a{
+  color: #1E5128;
+}
+
+.dropdown_menu{
+    position: relative;
+}
+
+.dropdown_menu::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #191A19;
+    transition: width 0.3s ease;
+}
+
+.dropdown_menu:hover::before{
+    width: 24px;
+}
+
+
+/* banner slider btn style */
+.swiper-pagination {
+    overflow: visible !important;
+}
+
+.swiper-pagination-bullet {
+    overflow: visible;
+    position: relative;
+}
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background-color: #1E5128;
+    border-radius: 50%;
+    position: relative;
+}
+
+.swiper-pagination-bullet::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #191A19;
+    border-radius: 50%;
+}
