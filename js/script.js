@@ -43,3 +43,28 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(document.querySelector('#stats'));
+
+// typewriter effect
+const text = "Workflow.";
+const speed = 120;     // typing speed
+const delay = 1200;    // pause after full word
+let index = 0;
+
+function typeWriter() {
+  const el = document.getElementById("typewriter");
+
+  if (index < text.length) {
+    el.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  } else {
+    setTimeout(() => {
+      el.textContent = "";
+      index = 0;
+      typeWriter();
+    }, delay);
+  }
+}
+
+
+typeWriter();
