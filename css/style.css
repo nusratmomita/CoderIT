@@ -22,6 +22,11 @@
   border: 2px solid red;
 }
 
+.about_us_line{
+  border: 3px solid #1E5128;
+  border-radius: 20px;
+}
+
 .submenu > ul > li:hover > a{
   color: #1E5128;
 }
@@ -79,9 +84,57 @@
   to { transform: translateX(100%); }
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
-}
+@keyframes move2 {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+} 
+
+
 .cursor {
   animation: blink 1s step-end infinite;
 }
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.cursor2 {
+  animation: blinky 1s step-end infinite;
+}
+
+/* banner images */
+.img-left {
+  animation: moveRight 4s ease-in-out infinite alternate;
+}
+
+.img-right {
+  animation: moveLeft 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+/* .bannerLeftImg {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.bannerLeftImg.show {
+  opacity: 1;
+  transform: translateX(0);
+} */
