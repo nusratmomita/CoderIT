@@ -8,38 +8,40 @@ var swiperBanner = new Swiper(".hero_banner_slider", {
     },
 });
 
+// count down feature
 function startCounter() {
-    $('.counter').each(function () {
-        const $this = $(this);
-        const target = +$this.data('target');
+  $('.counter').each(function () {
+    const $this = $(this);
+    const target = +$this.data('target');
 
-        $({ countNum: 0 }).animate(
-            { countNum: target },
-            {
-                duration: 2000,
-                easing: 'swing',
-                step: function () {
-                    $this.text(Math.floor(this.countNum) + '+');
-                },
-                complete: function () {
-                    $this.text(target + '+');
-                }
-            }
-        );
-    });
+    $({ countNum: 0 }).animate(
+      { countNum: target },
+      {
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+              $this.text(Math.floor(this.countNum) + '+');
+          },
+          complete: function () {
+              $this.text(target + '+');
+          }
+      }
+    );
+  });
 }
 
+// appear count down when screen comes in
 let counterStarted = false;
 
 const observer = new IntersectionObserver(
-    function (entries) {
-        if (entries[0].isIntersecting && !counterStarted) {
-            startCounter();
-            counterStarted = true;
-            observer.disconnect(); // run only once
-        }
-    },
-    { threshold: 0.4 } // 40% visible
+  function (entries) {
+    if (entries[0].isIntersecting && !counterStarted) {
+        startCounter();
+        counterStarted = true;
+        observer.disconnect(); // run only once
+    }
+  },
+  { threshold: 0.4 } // 40% visible
 );
 
 observer.observe(document.querySelector('#stats'));
@@ -92,19 +94,35 @@ function typeWriter2() {
 
 typeWriter2();
 
+// swiper for testimonial section
 var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+  spaceBetween: 50,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 150,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  a11y: {
+    prevSlideMessage: 'Previous review',
+    nextSlideMessage: 'Next review',
+  }
+});
