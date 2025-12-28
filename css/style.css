@@ -161,8 +161,53 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* THIS IS THE KEY */
 .project_card:hover .project_details {
   opacity: 1;
   transform: scale(1);
 }
+
+/* scrolling behavior */
+.scrolled{
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+/*  button style */
+.btn_style {
+  background-color: #191A19;
+  color: #D8E9A8;
+  padding: 6px 32px;
+  border-radius: 35px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #191A19;
+  z-index: 1; /* creates stacking context */
+}
+
+.btn_style::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: #D8E9A8;
+  transition: width 0.25s ease-in-out;
+  z-index: -1; 
+  border-radius: inherit;
+}
+
+.btn_style:hover::after {
+  width: 100%;
+}
+
+.btn_style:hover {
+  color: #191A19;
+}
+
+
+

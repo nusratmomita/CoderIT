@@ -26,19 +26,13 @@
 </head>
 <body class="inter-font bg-yellow-50">
     <header>
-        <!-- header top-->
-        <div class="bg-[#191A19] overflow-hidden">
-            <h3 class="text-[#D8E9A8] text-xl font-[500] whitespace-nowrap animate-[move_12s_linear_infinite] py-2">GET 20% OFF ON EVERY FRIDAY ON EVERY DEAL !</h3>
-        </div>
-        <!-- header down -->
         <div class="bg-[#D8E9A8]">
             <div id="stickyHeader">
-
                 <!-- to blur the bg -->
                 <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
 
                 <!-- logo + navlinks -->
-                <div class="container debugg">
+                <div class="container ">
                     <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
                         <!-- logo(main) -->
                         <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
@@ -72,9 +66,7 @@
                         </div>
 
                         <!-- demo btn -->
-                        <div class="hidden lg:block bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0">
-                            <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] whitespace-nowrap">Get a Demo</button>
-                        </div>
+                        <button class="hidden lg:block btn_style">Get a Demo</button>
                     </div>
                 </div>
             </div>
@@ -127,92 +119,32 @@
 
     <main>
         <!-- banner section -->
-        <div class="swiper hero_banner_slider bg-[#D8E9A8]">
-            <div class="swiper-wrapper">
-                <!-- slider 1 -->
-                <div class="swiper-slide relative">
-                    <div class="container">
-                        <div class="flex flex-col justify-between items-center">
-                            <div class="flex justify-center items-center gap-2">
-                                <!-- stars -->
-                                <div>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star-half text-[#014e01]"></i>
-                                </div>
-                                <h3 class="text-xl font-[500] text-[#191A19] text-center"><span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
-                            </div>
-                            <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart Website for Seamless <br><span id="typewriter" class="border-r-2 border-black pr-1 cursor"></span></h2>
-                            <p class="text-lg lg:text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
+        <div class="hero_banner_slider bg-[#D8E9A8] h-150 relative">
+            <div>
+                <div class="container">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="pt-10 pb-20 flex flex-col justify-between items-center">
+                            <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:leading-[50px] font-[600] montserrat-font text-center debugg">Smart Website for Seamless <br><span id="typewriter" class="border-r-2 border-black pr-1 cursor"></span></h2>
+                            <p class="text-lg lg:text-xl font-[500] text-center inter-font mt-4">We build powerful software that helps companies work smarter <br> everywhere.</p>
     
                             <div class="flex flex-col lg:flex-row gap-2 mt-4">
-                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] border border-transparent hover:border-[#191A19] text-center">
-                                    <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] pt-2 font-[600]">Try now!</button>
-                                </div>
+                                <button class="btn_style">Try Now!</button>
                                 <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19] border border-[#191A19]">
                                     <button class="text-[#191A19] px-8 py-1.5 cursor-pointer hover:text-[#D8E9A8] pt-2 flex gap-2 justify-center items-center font-[600]">View Projects<i class="fa-solid fa-reply-all"></i></button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div>
+                    
                         <div>
-                            <img class="hidden lg:block absolute top-25 left-10 w-95 h-80 object-cover banner-img-left" src="./assets/webDemoForBanner.png" alt="bannerLeftImg">
-                        </div>
-                        <div>
-                            <img class="hidden lg:block absolute top-15 right-15 w-70 h-60 object-cover banner-img-right" src="./assets/bannerRightImg.png" alt="bannerRightImg">
+                            <img class="hidden lg:block w-250 h-140 object-cover banner-img-left" src="./assets/bannerImg2.png" alt="bannerLeftImg">
                         </div>
                     </div>
                 </div>
-                <!-- slider 2 -->
-                <div class="swiper-slide relative">
-                    <div class="container">
-                        <div class="flex flex-col justify-between items-center">
-                            <div class="flex justify-center items-center gap-2">
-                                <!-- stars -->
-                                <div>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star text-[#014e01]"></i>
-                                    <i class="fa-solid fa-star-half text-[#014e01]"></i>
-                                </div>
-                                <h3 class="text-xl font-[500] text-[#191A19] text-center"><span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
-                            </div>
-                            <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:text-[50px] leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart App for Seamless <br><span id="typewriter2" class="border-r-2 border-black pr-1 cursor"></span></h2>
-                            <p class="text-lg lg:text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
-    
-                            <div class="flex gap-2 mt-4">
-                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] border border-transparent hover:border-[#191A19]">
-                                    <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] pt-2 font-[600]">Try now!</button>
-                                </div>
-                                <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19] border border-[#191A19]">
-                                    <button class="text-[#191A19] px-8 py-1.5 cursor-pointer hover:text-[#D8E9A8] pt-2 flex gap-2 justify-center items-center font-[600]">View Projects<i class="fa-solid fa-reply-all"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <img class="hidden lg:block absolute top-40 left-15 w-60 h-60 object-cover banner-img-left" src="./assets/bannerLeftImg.png" alt="bannerLeftImg">
-                        </div>
-                        <div>
-                            <img class="hidden lg:block absolute top-5 right-15 w-60 h-115 object-cover banner-img-right" src="./assets/appDemoForBanner.png" alt="bannerRightImg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pb-10">
-                <div class="swiper-pagination mt-20"></div>
             </div>
         </div>
 
         <!-- about us -->
-        <div class="mt-[150px] lg:mt-[120px]">
+        <div class="mt-[150px] lg:mt-[350px]">
             <div class="container flex flex-col lg:flex-row justify-center items-center">
                 <!-- left side image -->
                 <div class="relative lg:w-[50%] flex flex-col gap-2 px-4 lg:px-0 lg:flex-none">
@@ -222,9 +154,6 @@
                 </div>
                 <!-- right side text -->
                 <div class="lg:w-[50%] px-4 lg:px-0 mt-20 lg:mt-0">
-                    <div class="bg-[#191A19] w-57 rounded-md">
-                        <h3 class="text-[#D8E9A8] px-3 py-3 whitespace-nowrap text-xl font-[400] text-center montserrat-font">About Our Company</h3>
-                    </div>
                     <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-semibold montserrat-font leading-tight mt-3 mb-6">
                         Your Trusted Partner for <span class="text-[#4E9F3D]">Digital Innovation</span>
                     </h3>
@@ -750,10 +679,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:ml-[48px] ml-10 mt-10 lg:mt-0">
+                <div class="lg:ml-[48px] ml-10 mt-10 lg:mt-0 w-[25%]">
                     <h3 class="font-[500] text-[24px] text-[#D8E9A8] halyardDisplay_font mb-4">Join our NewLetter Now!</h3>
-                    <p class="font-[500] text-[24px] text-[#D8E9A8]">Get the latest nows fom us before all</p>
-                    <div class="mt-[45px] flex flex-col lg:flex-row">
+                    <div class="mt-[20px] flex flex-col lg:flex-row">
                         <div class=" mx-2 lg:mx-0 border border-[#FFFFFF1A] rounded-[50px] lg:w-[450px] h-[75px] lg:h-[95px] flex items-center justify-between focus-within:border-[#424B5C] transition-colors duration-300">
                             <input type="email" placeholder="Enter Your Email" class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
                         </div>

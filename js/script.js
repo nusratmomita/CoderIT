@@ -1,12 +1,12 @@
 // for banner slider
-var swiperBanner = new Swiper(".hero_banner_slider", {
-  loop: true,
-  pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true
-    },
-});
+// var swiperBanner = new Swiper(".hero_banner_slider", {
+//   loop: true,
+//   pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         dynamicBullets: true
+//     },
+// });
 
 // count down feature
 function startCounter() {
@@ -71,29 +71,6 @@ function typeWriter() {
 typeWriter();
 
 
-const text2 = "Workflow.";
-const speed2 = 120;     // typing speed
-const delay2 = 1200;    // pause after full word
-let index2 = 0;
-
-function typeWriter2() {
-  const el = document.getElementById("typewriter2");
-
-  if (index2 < text2.length) {
-    el.textContent += text2.charAt(index2);
-    index2++;
-    setTimeout(typeWriter2, speed2);
-  } else {
-    setTimeout(() => {
-      el.textContent = "";
-      index2 = 0;
-      typeWriter2();
-    }, delay2);
-  }
-}
-
-typeWriter2();
-
 // swiper for testimonial section
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 50,
@@ -147,8 +124,6 @@ const overlayHeader = document.getElementById("overlayHeader");
 
 const mobilePageNav = document.getElementById("mobilePageNav"); 
 const mobilePageNavMenu = document.getElementById("mobilePageNavMenu");
-
-// console.log(drawer, overlay, hamburger, crossIcon, mobilePageNav, mobilePageNavMenu);
 
 // Open drawer
 hamburger.addEventListener("click", () => {
