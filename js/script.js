@@ -124,5 +124,50 @@ var swiper = new Swiper(".mySwiper", {
   a11y: {
     prevSlideMessage: 'Previous review',
     nextSlideMessage: 'Next review',
+  },
+
+  breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      },
   }
 });
+
+// mobile navbar
+const hamburger = document.getElementById("hamburger"); 
+const mobileDrawer = document.getElementById("mobileDrawer"); 
+const mobileClose = document.getElementById("mobileClose"); 
+const overlayHeader = document.getElementById("overlayHeader"); 
+
+const mobilePageNav = document.getElementById("mobilePageNav"); 
+const mobilePageNavMenu = document.getElementById("mobilePageNavMenu");
+
+// console.log(drawer, overlay, hamburger, crossIcon, mobilePageNav, mobilePageNavMenu);
+
+// Open drawer
+hamburger.addEventListener("click", () => {
+    mobileDrawer.classList.remove("-translate-x-full");
+    overlayHeader.classList.remove("hidden");
+});
+
+// Close drawer (X button)
+mobileClose.addEventListener("click", () => {
+    mobileDrawer.classList.add("-translate-x-full");
+    overlayHeader.classList.add("hidden");
+});
+
+// Close drawer (overlay click)
+overlayHeader.addEventListener("click", () => {
+    mobileDrawer.classList.add("-translate-x-full");
+    overlayHeader.classList.add("hidden");
+});
+
+mobilePageNav.addEventListener("click", function() {
+    mobilePageNavMenu.classList.toggle("hidden");
+})

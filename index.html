@@ -39,7 +39,7 @@
 
                 <!-- logo + navlinks -->
                 <div class="container debugg">
-                    <div class="flex gap-30 justify-between items-center">
+                    <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
                         <!-- logo(main) -->
                         <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
                             <a href="#">
@@ -47,6 +47,10 @@
                             </a>
                             <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                         </div>
+
+                        <button id="hamburger" class="lg:hidden px-8 lg:px-0">
+                            <i class="fa-solid fa-bars text-md text-[#424B5C] hover:text-[#6E9EFA] cursor-pointer"></i>
+                        </button>
         
                         <!-- navlinks -->
                         <div class="hidden lg:block submenu">
@@ -68,14 +72,53 @@
                         </div>
 
                         <!-- demo btn -->
-                        <div class="bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0">
-                            <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19]">Get a Demo</button>
+                        <div class="hidden lg:block bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0">
+                            <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] whitespace-nowrap">Get a Demo</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- small screen -->
+    <div id="mobileDrawer"
+        class="fixed top-0 left-0 w-[280px] h-full bg-white shadow-lg 
+                transform -translate-x-full transition-transform duration-300 
+                z-50 p-6 lg:hidden overflow-y-auto flex flex-col">
+
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex justify-center items-center">
+                <img class="w-[80px] -ml-5" src="./assets/CoderITLogo.png" alt="logo">
+                <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
+            </div>
+            <button id="mobileClose" class="text-2xl">
+                <i class="fa-solid fa-xmark cursor-pointer hover:text-[#6E9EFA]"></i>
+            </button>
+
+        </div>
+
+        <ul class="flex flex-col gap-4 font-[500] text-[#424B5C] mt-10">
+            <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Home</a></li>
+            <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">About us</a></li>
+            <li class="group">
+                <button id="mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#6E9EFA] w-full cursor-pointer">
+                    <span class="text-xl font-medium hover:text-[#6E9EFA]">Services</span>
+                    <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#6E9EFA] rounded-[10px] p-1 cursor-pointer"></i>
+                </button>
+
+                <ul id="mobilePageNavMenu" class="hidden ml-4 mt-2">
+                    <li><a class="block py-1 hover:text-[#6E9EFA] pl-3 rounded-[5px]" href="#">Web Development<a></li>
+                    <li><a class="block py-1 hover:text-[#6E9EFA] pl-3 rounded-[5px]" href="#">App Development</a></li>
+                    <li><a class="block py-1 hover:text-[#6E9EFA] pl-3 rounded-[5px]" href="#">Web Development</a></li>
+                    <li><a class="block py-1 hover:text-[#6E9EFA] pl-3 rounded-[5px]" href="#">UI/UX Design</a></li>
+                    <li><a class="block py-1 hover:text-[#6E9EFA] pl-3 rounded-[5px]" href="#">AI, ML & IoT Development</a></li>
+                </ul>
+            </li>
+            <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Blog</a></li>
+            <li><a class="hover:text-[#6E9EFA] text-xl font-medium" href="#">Contact</a></li>
+        </ul>
+    </div>
 
     <main>
         <!-- banner section -->
@@ -96,11 +139,11 @@
                                 </div>
                                 <h3 class="text-xl font-[500] text-[#191A19] text-center"><span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
                             </div>
-                            <h2 class="text-[50px] leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart Website for Seamless <br><span id="typewriter" class="border-r-2 border-black pr-1 cursor"></span></h2>
-                            <p class="text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
+                            <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart Website for Seamless <br><span id="typewriter" class="border-r-2 border-black pr-1 cursor"></span></h2>
+                            <p class="text-lg lg:text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
     
-                            <div class="flex gap-2 mt-4">
-                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] border border-transparent hover:border-[#191A19]">
+                            <div class="flex flex-col lg:flex-row gap-2 mt-4">
+                                <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] border border-transparent hover:border-[#191A19] text-center">
                                     <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] pt-2 font-[600]">Try now!</button>
                                 </div>
                                 <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19] border border-[#191A19]">
@@ -134,8 +177,8 @@
                                 </div>
                                 <h3 class="text-xl font-[500] text-[#191A19] text-center"><span class="italic text-[#4E9F3D]">Average rating </span>4.5/5.</h3>
                             </div>
-                            <h2 class="text-[50px] leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart App for Seamless <br><span id="typewriter2" class="border-r-2 border-black pr-1 cursor"></span></h2>
-                            <p class="text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
+                            <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:text-[50px] leading-[50px] font-[500] montserrat-font mt-4 text-center">Smart App for Seamless <br><span id="typewriter2" class="border-r-2 border-black pr-1 cursor"></span></h2>
+                            <p class="text-lg lg:text-xl font-[500] mt-4 text-center inter-font">We build powerful software that helps companies work smarter <br> everywhere.</p>
     
                             <div class="flex gap-2 mt-4">
                                 <div class="bg-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] border border-transparent hover:border-[#191A19]">
@@ -164,12 +207,12 @@
         </div>
 
         <!-- about us -->
-        <div class="mt-[120px]">
+        <div class="mt-[150px] lg:mt-[120px]">
             <div class="container flex flex-col lg:flex-row justify-center items-center">
                 <!-- left side image -->
                 <div class="relative lg:w-[50%] flex flex-col gap-2 px-4 lg:px-0 lg:flex-none">
                     <img class="lg:w-80 lg:h-80 object-cover relative z-0 -mt-30 rounded-[10px]" src="./assets/teamWork.jpg" alt="teamWork">
-                    <img class="lg:w-80 lg:h-80 lg:absolute lg:top-0 lg:left-45 z-50 rounded-[10px] object-cover" src="./assets/aboutUsImg2.png" alt="squareBlue">
+                    <img class="lg:w-80 lg:h-80 lg:absolute lg:top-0 lg:left-45 lg:z-50 rounded-[10px] object-cover" src="./assets/aboutUsImg2.png" alt="squareBlue">
                     <img class="lg:w-35 lg:h-35 hidden lg:block lg:absolute lg:-top-38 lg:right-35 z-50 rounded-[10px] object-cover rotate-15" src="./assets/circleImg.png" alt="circleImg">
                 </div>
                 <!-- right side text -->
@@ -400,7 +443,7 @@
                     <h2 class="text-center text-2xl lg:text-4xl font-[600] montserrat-font text-[#014e01]">Recent Projects</h2>
                     <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#191A19] mt-3">We believe in showing work, not just talking! <br> Check out our recently delivered projects</h4>
                 </div>
-                <div class="grid grid-cols-3 grid-rows-1 gap-[30px] mt-15">
+                <div class="px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-3 grid-rows-1 gap-[30px] mt-15">
                     <!-- project 1 -->
                     <div class="project_card">
                         <div class="project_short_detail rounded-[10px] bg-[#D8E9A8] border-2 border-[#191A19]">
@@ -512,7 +555,7 @@
         </div>
 
         <!-- testimonial section -->
-        <div class="mt-[120px] mb-100">
+        <div class="mt-[120px]">
             <div class="container">
                 <div>
                     <h2 class="text-center text-4xl font-[600] montserrat-font text-[#014e01]">Testimonial</h2>
@@ -522,7 +565,7 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!-- slider 1 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-4 lg:px-0">
                             <div class="review bg-[#D8E9A8] rounded-[10px] mx-auto">
                                 <!-- img + postion -->
                                 <div class="ml-[50px] flex gap-[16px] relative">
@@ -531,9 +574,9 @@
                                         <img class="-mt-5 border-2 border-[#191A19] rounded-[50%] object-cover w-[100px] h-[100px] p-[4px]" src="./assets/maleImgReview.png" alt="doctorImgReview">
                                     </div>
                                     <!-- name + position -->
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                         <h3 class="mt-[15px] font-[500] text-[20px] text-[#222222] montserrat-font">Mr. Kabira,</h3>
-                                        <h4 class="font-[400] text-[14px] text-[#191A19] mt-6">Clinic CEO</h4>
+                                        <h4 class="font-[400] text-[14px] text-[#191A19] lg:mt-6">Clinic CEO</h4>
                                     </div>
                                 </div>
                                 <div class="mt-[20px] pl-[49px] pr-[51px] flex justify-start gap-3">
@@ -543,7 +586,7 @@
                             </div>
                         </div>
                         <!-- slider 2 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-2 lg:px-0">
                             <div class="review bg-[#D8E9A8] rounded-[10px] mx-auto">
                                 <!-- img + postion -->
                                 <div class="ml-[50px] flex gap-[16px] relative">
@@ -552,9 +595,9 @@
                                         <img class="-mt-5 border-2 border-[#191A19] rounded-[50%] object-cover w-[100px] h-[100px] p-[4px]" src="./assets/maleImgReview1.png" alt="doctorImgReview">
                                     </div>
                                     <!-- name + position -->
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                         <h3 class="mt-[15px] font-[500] text-[20px] text-[#222222] montserrat-font">Mr. James,</h3>
-                                        <h4 class="font-[400] text-[14px] text-[#191A19] mt-6">Chief Com.</h4>
+                                        <h4 class="font-[400] text-[14px] text-[#191A19] lg:mt-6">Chief Com.</h4>
                                     </div>
                                 </div>
                                 <div class="mt-[20px] pl-[49px] pr-[51px] flex justify-start gap-3">
@@ -564,7 +607,7 @@
                             </div>
                         </div>
                         <!-- slider 3 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-4 lg:px-0">
                             <div class="review bg-[#D8E9A8] rounded-[10px] mx-auto">
                                 <!-- img + postion -->
                                 <div class="ml-[50px] flex gap-[16px] relative">
@@ -573,9 +616,9 @@
                                         <img class="-mt-5 border-2 border-[#191A19] rounded-[50%] object-cover w-[100px] h-[100px] p-[4px]" src="./assets/maleImgReview2.png" alt="doctorImgReview">
                                     </div>
                                     <!-- name + position -->
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                         <h3 class="mt-[15px] font-[500] text-[20px] text-[#222222] montserrat-font">Mr. Claire,</h3>
-                                        <h4 class="font-[400] text-[14px] text-[#191A19] mt-6">ABS Co., CTO</h4>
+                                        <h4 class="font-[400] text-[14px] text-[#191A19] lg:mt-6">ABS Co., CTO</h4>
                                     </div>
                                 </div>
                                 <div class="mt-[20px] pl-[49px] pr-[51px] flex justify-start gap-3">
@@ -585,7 +628,7 @@
                             </div>
                         </div>
                         <!-- slider 4 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-4 lg:px-0">
                             <div class="review bg-[#D8E9A8] rounded-[10px] mx-auto">
                                 <!-- img + postion -->
                                 <div class="ml-[50px] flex gap-[16px] relative">
@@ -594,9 +637,9 @@
                                         <img class="-mt-5 border-2 border-[#191A19] rounded-[50%] object-cover w-[100px] h-[100px] p-[4px]" src="./assets/maleImgReview3.png" alt="doctorImgReview">
                                     </div>
                                     <!-- name + position -->
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                         <h3 class="mt-[15px] font-[500] text-[20px] text-[#222222] montserrat-font">Mr. Yunus,</h3>
-                                        <h4 class="font-[400] text-[14px] text-[#191A19] mt-6">Clinic CTO</h4>
+                                        <h4 class="font-[400] text-[14px] text-[#191A19] lg:mt-6">Clinic CTO</h4>
                                     </div>
                                 </div>
                                 <div class="mt-[20px] pl-[49px] pr-[51px] flex justify-start gap-3">
@@ -606,7 +649,7 @@
                             </div>
                         </div>
                         <!-- slider 5 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide px-4 lg:px-0">
                             <div class="review bg-[#D8E9A8] rounded-[10px] mx-auto">
                                 <!-- img + postion -->
                                 <div class="ml-[50px] flex gap-[16px] relative">
@@ -615,9 +658,9 @@
                                         <img class="-mt-5 border-2 border-[#191A19] rounded-[50%] object-cover w-[100px] h-[100px] p-[4px]" src="./assets/maleImgReview2.png" alt="doctorImgReview">
                                     </div>
                                     <!-- name + position -->
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center">
                                         <h3 class="mt-[15px] font-[500] text-[20px] text-[#222222] montserrat-font">Mr. Ubash,</h3>
-                                        <h4 class="font-[400] text-[14px] text-[#191A19] mt-6">Ubash CO.</h4>
+                                        <h4 class="font-[400] text-[14px] text-[#191A19] lg:mt-6">Ubash CO.</h4>
                                     </div>
                                 </div>
                                 <div class="mt-[20px] pl-[49px] pr-[51px] flex justify-start gap-3">
@@ -627,14 +670,100 @@
                             </div>
                         </div>
                     </div>
-                    <div class="-mt-30">
+                    <div class="lg:-mt-10">
                         <div class="swiper-pagination block relative flex justify-center items-center"></div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+    
+    <footer class="mt-[120px] bg-[#191A19]">
+        <div class="container">
+            <div class="mt-10 lg:mt-[53px]">
+                <hr class="h-[1px] bg-[#FFFFFF12] border-0"/>
+            </div>
+            <!-- logo + links -->
+            <div class="lg:mt-[95px] pb-[107px] flex flex-col lg:flex-row">
+                <div class="ml-10 lg:ml-0 mt-10 lg:mt-0 lg:w-[25%]">
+                    <div class="flex justify-start items-center">
+                        <img class="-ml-8 w-30 h-30" src="./assets/CoderITLogo.png" alt="whiteLogo">
+                        <h3 class="text-2xl font-[600] montserrat-font text-[#D8E9A8] -ml-8">CoderIT</h3>
+                    </div>
+                    <h3 class="mt-[14px] font-[400] text-[16px] lg:text-[18px] text-[#D8E9A8]">In velit arcu posuere integer. Dolor sit am,  consectetur nun adipiscing elit.</h3>
+                    <ul class="flex gap-[30px] justify-start items-center mt-[50px]">
+                        <li class="group bg-[#D8E9A8] text-[#191A19] hover:bg-transparent border-2 border-t-4 hover:border-[#D8E9A8] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#191A19] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#D8E9A8] text-[#191A19] hover:bg-transparent border-2 border-t-4 hover:border-[#D8E9A8] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#191A19] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                        <li class="group bg-[#D8E9A8] text-[#191A19] hover:bg-transparent border-2 border-t-4 hover:border-[#D8E9A8] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#191A19] text-[18px] group-hover:text-[#FFFFFF]"></i></li>
+                    </ul>
+                </div>
+                <div class="lg:ml-[90px] ml-10 mt-10 lg:mt-0">
+                    <h3 class="font-[500] text-[24px] text-[#D8E9A8] montserrat-font whitespace-nowrap">Quick Links</h3>
+                    <ul class="list-none mt-5">
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]"href="#">Home</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]"href="#">About us</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Services</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Portfolios</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Blogs</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:ml-[80px] ml-10 mt-10 lg:mt-0">
+                    <div>
+                        <h3 class="font-[500] text-[24px] text-[#D8E9A8] halyardDisplay_font mb-[7px]">Contact info</h3>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-[#D8E9A8]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#D8E9A8]">#22-00  Locust Chicago, Illinois</h4>
+                        </div>
+                        <h4 class="ml-6 font-[400] text-[16px] text-[#D8E9A8]">#66-22 Los Angeles, California</h4>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-[#D8E9A8]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#D8E9A8]">(+66)-233-666-555</h4>
+                        </div>
+                        <h4 class="ml-7 font-[400] text-[16px] text-[#D8E9A8]">(+99)-222-455-4444</h4>
+                    </div>
+                    <div>
+                        <div class="mt-5 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-[#D8E9A8]"></i>
+                            <h4 class="font-[400] text-[16px] text-[#D8E9A8]">contactinfo@Zaviagmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:ml-[48px] ml-10 mt-10 lg:mt-0">
+                    <h3 class="font-[500] text-[24px] text-[#D8E9A8] halyardDisplay_font mb-4">Join our NewLetter Now!</h3>
+                    <p class="font-[500] text-[24px] text-[#D8E9A8]">Get the latest nows fom us before all</p>
+                    <div class="mt-[45px] flex flex-col lg:flex-row">
+                        <div class=" mx-2 lg:mx-0 border border-[#FFFFFF1A] rounded-[50px] lg:w-[450px] h-[75px] lg:h-[95px] flex items-center justify-between focus-within:border-[#6E9EFA] transition-colors duration-300">
+                            <input type="email" placeholder="Enter Your Newsletter..." class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
+                        </div>
+                    </div>
+                <button class="bg-[#D8E9A8] p-3 rounded-md ml-5 mt-5 cursor-pointer hover:bg-transparent border-2 border-transparent hover:border-[#D8E9A8] hover:text-[#D8E9A8]">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer copy right section -->
+    <div class="bg-[#1F1F1F]">
+        <div class="flex flex-col lg:flex-row justify-center items-center py-4 lg:py-0">
+            <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#D8E9A8]">CoderIt</span> © Copyright-2025 All Rights Reserved.</h4>
+        </div>
+    </div>
     <!-- jquery -->
     <script src="./js/jquery.js"></script>
 
