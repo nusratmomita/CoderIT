@@ -3,6 +3,11 @@
 
 /* dark green -> 014e01/191A19 , medium green -> 1E5128, light green -> 4E9F3D and yellowish -> D8E9A8 */
 
+:root{
+  --hero-gradient-start: 85 45% 85%;
+  --hero-gradient-end: 120 35% 80%;
+}
+
 
 /* heading */
 .montserrat-font {
@@ -20,6 +25,15 @@
 
 .debug{
   border: 2px solid red;
+}
+
+.gradient_bg{
+background: linear-gradient(
+    135deg,
+    hsl(var(--hero-gradient-start)) 0%,
+    hsl(var(--hero-gradient-end)) 50%,
+    hsl(var(--hero-gradient-start)) 100%
+  );
 }
 
 .about_us_line{
@@ -209,5 +223,32 @@
   color: #191A19;
 }
 
+/* service section */
+.service_card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service_card:hover {
+  transform: translateY(-6px);
+}
+
+.service_btn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.service_card:hover .service_btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.newsLetter{
+  background-image: url('.././assets/newsLetterBG.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
 
 

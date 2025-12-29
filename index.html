@@ -26,7 +26,7 @@
 </head>
 <body class="inter-font bg-yellow-50">
     <header>
-        <div class="bg-[#D8E9A8]">
+        <div class="gradient_bg">
             <div id="stickyHeader">
                 <!-- to blur the bg -->
                 <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
@@ -119,27 +119,28 @@
 
     <main>
         <!-- banner section -->
-        <div class="hero_banner_slider bg-[#D8E9A8] h-150 relative">
+        <div class="hero_banner_slider gradient_bg h-150 relative">
             <div>
                 <div class="container">
                     <div class="flex flex-col justify-center items-center">
-                        <div class="pt-10 pb-20 flex flex-col justify-between items-center">
+                        <div class="pt-10 pb-10 flex flex-col justify-between items-center">
                             <div class="inline-flex items-center gap-2 bg-gradient-to-r from-green-100 to-green-100 px-4 py-2 rounded-full mb-4">
-                                <span class="text-xl font-[600] text-[#165f1d] montserrat-font">Find very need at one place<i class="fa-regular fa-star"></i></span>
+                                <span class="hidden lg:block text-md lg:text-xl font-[500] text-[#165f1d] montserrat-font">Find everything you need in one place <i class="fa-regular fa-star"></i></span>
+                                <span class="lg:hidden block text-md lg:text-xl font-[500] text-[#165f1d] montserrat-font">Find everything you need in one place</span>
                             </div>
                             <h2 class="text-[30px] lg:text-[50px] leading-[30px] lg:leading-[50px] font-[600] montserrat-font text-center debugg">Smart Website for Seamless <br><span id="typewriter" class="border-r-2 border-black pr-1 cursor"></span></h2>
                             <p class="text-lg lg:text-xl font-[400] text-center inter-font mt-4">We build powerful software that helps companies work smarter <br> everywhere.</p>
     
                             <div class="flex flex-col lg:flex-row gap-2 mt-4">
                                 <button class="btn_style">Try Now!</button>
-                                <div class="bg-[#D8E9A8] rounded-[35px] hover:bg-[#191A19] border border-[#191A19]">
+                                <div class="bg-transparent rounded-[35px] hover:bg-[#191A19] border border-[#191A19]">
                                     <button class="text-[#191A19] px-8 py-1.5 cursor-pointer hover:text-[#D8E9A8] pt-2 flex gap-2 justify-center items-center font-[600]">View Projects<i class="fa-solid fa-reply-all"></i></button>
                                 </div>
                             </div>
                         </div>
                     
                         <div>
-                            <img class="hidden lg:block w-250 h-130 object-cover banner-img-left" src="./assets/bannerImg2.png" alt="bannerLeftImg">
+                            <img class="hidden lg:block w-250 h-130 object-cover banner-img-left scale-100" src="./assets/bannerImg2.png" alt="bannerLeftImg">
                         </div>
                     </div>
                 </div>
@@ -147,7 +148,7 @@
         </div>
 
         <!-- about us -->
-        <div class="mt-[150px] lg:mt-[400px]">
+        <div class="mt-[150px] lg:mt-[440px]">
             <div class="container flex flex-col lg:flex-row justify-center items-center">
                 <!-- left side image -->
                 <div class="relative lg:w-[50%] flex flex-col gap-2 px-4 lg:px-0 lg:flex-none">
@@ -156,11 +157,11 @@
                     <img class="lg:w-35 lg:h-35 hidden lg:block lg:absolute lg:-top-38 lg:right-35 z-50 rounded-[10px] object-cover rotate-15" src="./assets/circleImg.png" alt="circleImg">
                 </div>
                 <!-- right side text -->
-                <div class="lg:w-[50%] px-4 lg:px-0 mt-20 lg:mt-0">
-                    <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-semibold montserrat-font leading-tight mt-3 mb-6">
+                <div class="lg:w-[50%] px-4 lg:px-0 mt-20 lg:-mt-15">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-semibold montserrat-font leading-tight mb-4">
                         Your Trusted Partner for <span class="text-[#4E9F3D]">Digital Innovation</span>
                     </h3>
-                    <div class="mt-5 flex gap-3">
+                    <div class="flex gap-3 mb-6">
                         <div class="relative h-60 w-4px">
                             <div class="decorative-line top-0 -translate-x-1/2 h-full w-px about_us_line"></div>
                         </div>
@@ -173,7 +174,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col lg:flex-row gap-4 lg:mt-4 lg:-ml-1">
+                    <div class="flex flex-col lg:flex-row gap-4 lg:-ml-1">
                         <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
                             <i class="fa-solid fa-location-arrow"></i>
                             <h4>ABC Tower, NYC</h4>
@@ -199,113 +200,68 @@
                     <h4 class="text-center text-xl font-[500] text-[#191A19] mt-3">Delivering excellence across web development, mobile applications, <br> and digital marketing solutions</h4>
                 </div>
                 <div class="px-4 lg:px-0">
-                    <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-1 gap-[30px] mt-10">
+                    <div class="mt-20 grid grid-cols-1 lg:grid-cols-4 grid-rows-1 gap-[20px]">
                         <!-- web dev -->
-                        <div class="border-2 border-[#014e01] bg-[#D8E9A8] rounded-md pb-4 group hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.15)] hover:translate-y-[-12px] transition-all duration-300">
-                            <div class="pt-4 rounded-sm flex justify-center items-center px-3">
-                                <img class="object-cover w-full h-full bg-white rounded-sm" src="./assets/WebdevService.png" alt="WebdevService">
-                            </div>
-                            <div class="mt-5 ml-4">
-                                <h3 class="text-2xl font-[600] montserrat-font text-[#191A19]">Web Development</h3>
-                                <p class="text-lg font-[400] text-[#191A19] mt-5">Creating responsive, high-performance websites that deliver exceptional user experiences and drive business growth.</p>
-                            </div>
-                            <!-- project count -->
-                            <div class="mt-5 ml-4 flex flex-col lg:flex-row gap-2 ">
-                                <h3 class="whitespace-nowrap text-md font-[400] text-[#001A00] border-2 border-[#008000] w-53 px-2 py-1 rounded-sm">
-                                    <span class="text-2xl font-[500] montserrat-font">12+</span> Projects Completed
-                                </h3>                            
-                                <h3 class="whitespace-nowrap text-md font-[400] text-[#D8E9A8] bg-[#014e01] w-53 px-2 py-1 rounded-sm border-l-6 border-green-700">
-                                    <span class="text-2xl font-[500] montserrat-font">30+</span> Happy Clients
-                                </h3>                         
-                            </div>
-                            <!-- CTA btn -->
-                            <div class="ml-4 mt-5 group">
-                                <button class="text-[#191A19] group-hover:underline text-lg cursor-pointer group-hover:pl-2 transition-all duration-300">Learn More <i class="fa-solid fa-arrow-right group-hover:pl-1 transition-all duration-300"></i></button>
+                        <div class="service_card">
+                            <div class="bg-[#ffffff] shadow-md rounded-[10px] pt-[50px] pl-[50px] pb-[25px] pr-[15px]">
+                                <div class="service_name">
+                                    <img class="mb-5" src="./assets/webDev.webp" alt="webDev">
+                                    <h3 class="mb-5">Secure, scalable tech & blockchain platforms built to transform payments, lending, and risk management.</h3>
+                                </div>
+    
+                                <div class="service_btn">
+                                    <button class="group cursor-pointer font-[600] hover:text-[#1E5128]">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-all duration-300 group-hover:text-[#1E5128]"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="grid grid-rows-1 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 gap-[30px]">
-                            <!-- app dev -->
-                            <div class="border-b-4 border-[#014e01] bg-[#D8E9A8] rounded-md pb-4 group hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.15)] hover:translate-y-[-12px] transition-all duration-300">
-                                <div class="pt-5 ml-4">
-                                    <h3 class="text-2xl font-[600] montserrat-font text-[#191A19]">App Development</h3>
-                                    <p class="text-lg font-[400] text-[#191A19]">Building innovative mobile applications that engage users and transform your business ideas into reality.</p>
+                        <!-- app dev -->
+                        <div class="service_card">
+                            <div class="bg-[#ffffff] shadow-md rounded-[10px] pt-[50px] pl-[50px] pb-[25px] pr-[15px]">
+                                <div class="service_name">
+                                    <img class="mb-5" src="./assets/appdev.webp" alt="webDev">
+                                    <h3 class="mb-5">Secure, scalable tech & blockchain platforms built to transform payments, lending, and risk management.</h3>
                                 </div>
-                                <!-- project count -->
-                                <div class="mt-3 ml-4 flex flex-col gap-2">
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#001A00] border-2 border-[#008000] w-53 px-2 py-1 rounded-sm">
-                                        <span class="text-2xl font-[500] montserrat-font">5+</span> Projects Completed
-                                    </h3>                            
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#D8E9A8] bg-[#014e01] w-53 px-2 py-1 rounded-sm border-l-6 border-green-700">
-                                        <span class="text-2xl font-[500] montserrat-font">10+</span> Happy Clients
-                                    </h3>                         
-                                </div>
-                                <!-- CTA btn -->
-                                <div class="ml-4 mt-3 group">
-                                    <button class="text-[#191A19] group-hover:underline text-lg cursor-pointer group-hover:pl-2 transition-all duration-300">Learn More <i class="fa-solid fa-arrow-right group-hover:pl-1 transition-all duration-300"></i></button>
+    
+                                <div class="service_btn">
+                                    <button class="group cursor-pointer font-[600] hover:text-[#1E5128]">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-all duration-300 group-hover:text-[#1E5128]"></i>
+                                    </button>
                                 </div>
                             </div>
-        
-                            <!-- DM -->
-                            <div class="border-b-4 border-[#014e01] bg-[#D8E9A8] rounded-md pb-4 group hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.15)] hover:translate-y-[-12px] transition-all duration-300">
-                                <div class="pt-5 ml-4">
-                                    <h3 class="text-2xl font-[600] montserrat-font text-[#191A19]">Digital Marketing</h3>
-                                    <p class="text-lg font-[400] text-[#191A19]">Amplifying your brand presence with data-driven strategies that deliver measurable results and ROI.</p>
+                        </div>
+                        <!-- DM -->
+                        <div class="service_card">
+                            <div class="bg-[#ffffff] shadow-md rounded-[10px] pt-[50px] pl-[50px] pb-[25px] pr-[15px]">
+                                <div class="service_name">
+                                    <img class="mb-5" src="./assets/DM.webp" alt="webDev">
+                                    <h3 class="mb-5">Secure, scalable tech & blockchain platforms built to transform payments, lending, and risk management.</h3>
                                 </div>
-                                <!-- project count -->
-                                <div class="mt-3 ml-4 flex flex-col gap-2">
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#001A00] border-2 border-[#008000] w-55 px-2 py-1 rounded-sm">
-                                        <span class="text-2xl font-[500] montserrat-font">100+</span> Projects Completed
-                                    </h3>                            
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#D8E9A8] bg-[#014e01] w-53 px-2 py-1 rounded-sm border-l-6 border-green-700">
-                                        <span class="text-2xl font-[500] montserrat-font">50+</span> Happy Clients
-                                    </h3>                         
-                                </div>
-                                <!-- CTA btn -->
-                                <div class="ml-4 mt-3 group">
-                                    <button class="text-[#191A19] group-hover:underline text-lg cursor-pointer group-hover:pl-2 transition-all duration-300">Learn More <i class="fa-solid fa-arrow-right group-hover:pl-1 transition-all duration-300"></i></button>
+    
+                                <div class="service_btn">
+                                    <button class="group cursor-pointer font-[600] hover:text-[#1E5128]">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-all duration-300 group-hover:text-[#1E5128]"></i>
+                                    </button>
                                 </div>
                             </div>
-
-                            <!-- UI/UX Design -->
-                            <div class="border-b-4 border-[#014e01] bg-[#D8E9A8] rounded-md pb-4 group hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.15)] hover:translate-y-[-12px] transition-all duration-300">
-                                <div class="pt-5 ml-4">
-                                    <h3 class="text-2xl font-[600] montserrat-font text-[#191A19]">UI/UX Design</h3>
-                                    <p class="text-lg font-[400] text-[#191A19]">Building innovative mobile applications that engage users and transform your business ideas into reality.</p>
+                        </div>
+                        <!-- Ai_Ml -->
+                        <div class="service_card">
+                            <div class="bg-[#ffffff] shadow-md rounded-[10px] pt-[50px] pl-[50px] pb-[25px] pr-[15px]">
+                                <div class="service_name">
+                                    <img class="mb-5" src="./assets/AI-ML.webp" alt="webDev">
+                                    <h3 class="mb-5">Secure, scalable tech & blockchain platforms built to transform payments, lending, and risk management.</h3>
                                 </div>
-                                <!-- project count -->
-                                <div class="mt-3 ml-4 flex flex-col gap-2">
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#001A00] border-2 border-[#008000] w-53 px-2 py-1 rounded-sm">
-                                        <span class="text-2xl font-[500] montserrat-font">5+</span> Projects Completed
-                                    </h3>                            
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#D8E9A8] bg-[#014e01] w-53 px-2 py-1 rounded-sm border-l-6 border-green-700">
-                                        <span class="text-2xl font-[500] montserrat-font">10+</span> Happy Clients
-                                    </h3>                         
-                                </div>
-                                <!-- CTA btn -->
-                                <div class="ml-4 mt-3 group">
-                                    <button class="text-[#191A19] group-hover:underline text-lg cursor-pointer group-hover:pl-2 transition-all duration-300">Learn More <i class="fa-solid fa-arrow-right group-hover:pl-1 transition-all duration-300"></i></button>
-                                </div>
-                            </div>
-        
-                            <!-- AWS service -->
-                            <div class="border-b-4 border-[#014e01] bg-[#D8E9A8] rounded-md pb-4 group hover:shadow-[0_20px_40px_0_rgba(0,0,0,0.15)] hover:translate-y-[-12px] transition-all duration-300">
-                                <div class="pt-5 ml-4">
-                                    <h3 class="text-2xl font-[600] montserrat-font text-[#191A19]">AWS service</h3>
-                                    <p class="text-lg font-[400] text-[#191A19]">Amplifying your brand presence with data-driven strategies that deliver measurable results and ROI.</p>
-                                </div>
-                                <!-- project count -->
-                                <div class="mt-3 ml-4 flex flex-col gap-2">
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#001A00] border-2 border-[#008000] w-55 px-2 py-1 rounded-sm">
-                                        <span class="text-2xl font-[500] montserrat-font">100+</span> Projects Completed
-                                    </h3>                            
-                                    <h3 class="whitespace-nowrap text-md font-[400] text-[#D8E9A8] bg-[#014e01] w-53 px-2 py-1 rounded-sm border-l-6 border-green-700">
-                                        <span class="text-2xl font-[500] montserrat-font">50+</span> Happy Clients
-                                    </h3>                         
-                                </div>
-                                <!-- CTA btn -->
-                                <div class="ml-4 mt-3 group">
-                                    <button class="text-[#191A19] group-hover:underline text-lg cursor-pointer group-hover:pl-2 transition-all duration-300">Learn More <i class="fa-solid fa-arrow-right group-hover:pl-1 transition-all duration-300"></i></button>
+    
+                                <div class="service_btn">
+                                    <button class="group cursor-pointer font-[600] hover:text-[#1E5128]">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-all duration-300 group-hover:text-[#1E5128]"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -384,20 +340,20 @@
                     <!-- project 1 -->
                     <div class="project_card">
                         <div class="project_short_detail rounded-[10px] bg-[#D8E9A8] border-2 border-[#191A19]">
-                            <img class="object-cover rounded-[10px]" src="./assets/aroggo1.png" />
-                            <div class="pt-5 pl-5">
-                                <div class="flex gap-2 justify-start items-center">
+                            <img class="object-cover rounded-[20px] p-2" src="./assets/project1.webp" />
+                            <div class="pt-5 px-4 lg:px-0 lg:pl-5 flex flex-col lg:flex-row gap-3">
+                                <div class="flex gap-2 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-regular fa-calendar text-[#014e01] text-xl font-[500]"></i>
-                                    <h3 class="text-[#014e01] text-xl font-[500]">Delivered On 12th Oct'24</h3>
+                                    <h3 class="text-[#014e01] text-xl font-[500]">12th Oct'24</h3>
                                 </div>
-                                <div class="flex gap-2 justify-start items-center ">
+                                <div class="flex gap-2 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-solid fa-tag text-[#014e01] text-xl font-[500]"></i>
                                     <h3 class="text-[#014e01] text-xl font-[500]">Health Care</h3>
                                 </div>
                             </div>
                             <div class="pl-5 pb-5">
                                 <h3 class="text-2xl text-[#191A19] font-[700] montserrat-font mt-4">Aroggo</h3>
-                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Medicine E-commerce website</h4>
+                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Medicine E-commerce website.Aroggo is a comprehensive medicine e-commerce platform connecting patients....</h4>
                             </div>
                         </div>
 
@@ -418,20 +374,20 @@
                     <!-- project 2 -->
                     <div class="project_card">
                         <div class="project_short_detail rounded-[10px] bg-[#D8E9A8] border-2 border-[#191A19]">
-                            <img class="object-cover rounded-[10px]" src="./assets/2.png" />
-                            <div class="pt-5 pl-5">
-                                <div class="flex gap-2 justify-start items-center">
+                            <img class="object-cover rounded-[20px] p-2" src="./assets/project2.webp" />
+                            <div class="pt-5 px-4 lg:px-0 lg:pl-5 flex flex-col lg:flex-row gap-3">
+                                <div class="flex gap-2 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-regular fa-calendar text-[#014e01] text-xl font-[500]"></i>
-                                    <h3 class="text-[#014e01] text-xl font-[500]">Delivered On 25th Nov'25</h3>
+                                    <h3 class="text-[#014e01] text-xl font-[500]">25th Nov'25</h3>
                                 </div>
-                                <div class="flex gap-2 justify-start items-center ">
+                                <div class="flex gap-2 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-solid fa-tag text-[#014e01] text-xl font-[500]"></i>
-                                    <h3 class="text-[#014e01] text-xl font-[500]">Personal Portfolio</h3>
+                                    <h3 class="text-[#014e01] text-xl font-[500]">Portfolio</h3>
                                 </div>
                             </div>
                             <div class="pl-5 pb-5">
                                 <h3 class="text-2xl text-[#191A19] font-[700] montserrat-font mt-4">Portfolio</h3>
-                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Personal Website</h4>
+                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Personal Website.You’ll find details about my experience in development, projects I've built and my interested field...</h4>
                             </div>
                         </div>
 
@@ -452,20 +408,20 @@
                     <!-- project 3 -->
                     <div class="project_card">
                         <div class="project_short_detail rounded-[10px] bg-[#D8E9A8] border-2 border-[#191A19]">
-                            <img class="object-cover rounded-[10px]" src="./assets/jatri.png" />
-                            <div class="pt-5 pl-5">
-                                <div class="flex gap-2 justify-start items-center">
+                            <img class="object-cover rounded-[20px] p-2" src="./assets/project3.webp" />
+                            <div class="pt-5 px-4 lg:px-0 lg:pl-5 flex flex-col lg:flex-row gap-3">
+                                <div class="flex gap-2 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-regular fa-calendar text-[#014e01] text-xl font-[500]"></i>
-                                    <h3 class="text-[#014e01] text-xl font-[500]">Delivered On 12th Dec'25</h3>
+                                    <h3 class="text-[#014e01] text-xl font-[500]">12th Dec'25</h3>
                                 </div>
-                                <div class="flex gap-2 justify-start items-center ">
+                                <div class="flex gap-1 justify-start items-center border border-[#222222] rounded-md p-2">
                                     <i class="fa-solid fa-tag text-[#014e01] text-xl font-[500]"></i>
                                     <h3 class="text-[#014e01] text-xl font-[500]">Rental Site</h3>
                                 </div>
                             </div>
                             <div class="pl-5 pb-5">
                                 <h3 class="text-2xl text-[#191A19] font-[700] montserrat-font mt-4">Jatri</h3>
-                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Car rental site</h4>
+                                <h4 class="text-lg text-[#191A19] font-[500] montserrat-font mb-3">Car rental site.Jatri is a car rental web service that helps users rent their preferred cars easily without any unwanted hassle...</h4>
                             </div>
                         </div>
 
@@ -486,7 +442,7 @@
                 </div>
                 <!-- view all btn -->
                 <div class="flex justify-center items-center mt-10">
-                    <button class="bg-transparent border-2 border-[#191A19] text-[#191A19] rounded-[35px] hover:bg-[#D8E9A8] hover:border-transparent p-3 cursor-pointer">See more projects</button>
+                    <button class="btn_style">View More Projects</button>
                 </div>
             </div>
         </div>
@@ -607,8 +563,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:-mt-10 -mt-35">
+                    <div class="lg:-mt-10 mt-5 flex justify-center items-center lg:flex-none">
                         <div class="swiper-pagination block relative flex justify-center items-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- newsLetter section  -->
+        <div class="mt-[120px] newsLetter">
+            <div class="flex flex-col justify-center items-center pb-30">
+                <div class="text-center pt-[80px]">
+                    <div class="hidden ml-45 mb-5 bg-green-100 p-3 w-[50px] h-[50px] rounded-xl lg:flex justify-center items-center">
+                        <i class="fa-regular fa-envelope text-3xl text-[#165f1d]"></i>
+                    </div>
+                    <h4 class="font-[500] text-3xl lg:text-5xl text-[#014e01] mb-[7px]">Stay in the Loop</h4>
+                    <p class="font-[500] text-md lg:text-xl text-[#014e01] mt-2 mb-3">Join our newsletter and be the first to discover <br class="hidden lg:block"> exclusive updates, tips, and special offers.</p>
+                </div>
+                <div class="px-4">
+                    <div class="mt-8 border border-[#014e01] rounded-[10px] flex items-center justify-center focus-within:border-[#D8E9A8] transition-colors duration-300">
+                        <input type="email" placeholder="Enter Your Email..." class="bg-transparent w-60 h-15 lg:w-110 lg:h-15 text-black font-[400] text-[16px] leading-[24px] pl-10 lg:pl-[42px] outline-none border-none focus:outline-none" />
+                        <button class="hidden lg:block mr-1 bg-[#014e01] text-[#D8E9A8] lg:p-3 p-2 rounded-md cursor-pointer hover:bg-transparent border-2 border-transparent hover:border-[#165f1d] hover:text-[#165f1d]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="lg:hidden block mr-1 bg-[#014e01] text-[#D8E9A8] lg:p-3 p-2 rounded-md cursor-pointer hover:bg-transparent border-2 border-transparent hover:border-[#165f1d] hover:text-[#165f1d]">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -657,16 +633,39 @@
                         </li>
                     </ul>
                 </div>
+                <div class="lg:ml-[90px] ml-10 mt-10 lg:mt-0">
+                    <h3 class="font-[500] text-[24px] text-[#D8E9A8] montserrat-font whitespace-nowrap">Hire Us</h3>
+                    <ul class="list-none mt-5">
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]"href="#">Hire React.Js Developer</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]"href="#">Hire Node.Js Developer</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Hire Python Developer</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Hire Java Developer</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Hire ML/AI Engineer</a>
+                        </li>
+                        <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
+                            <a class="font-[400] text-[16px] text-[#D8E9A8] transition-colors duration-300 group-hover:text-[#ffffff]" href="#">Hire Full-Stack Developer</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="lg:ml-[80px] ml-10 mt-10 lg:mt-0">
                     <div>
-                        <h3 class="font-[500] text-[24px] text-[#D8E9A8] halyardDisplay_font mb-[7px]">Contact info</h3>
+                        <h3 class="font-[500] text-[24px] text-[#D8E9A8] mb-[7px]">Contact info</h3>
                     </div>
                     <div>
                         <div class="mt-5 flex items-center gap-2">
                             <i class="fa-solid fa-location-dot text-[#D8E9A8]"></i>
                             <h4 class="font-[400] text-[16px] text-[#D8E9A8]">ABC Tower, NYC</h4>
                         </div>
-                        <h4 class="ml-6 font-[400] text-[16px] text-[#D8E9A8]">Mirabaza, Sylhet</h4>
+                        <h4 class="ml-6 font-[400] text-[16px] text-[#D8E9A8]">Mirabazar, Sylhet</h4>
                     </div>
                     <div>
                         <div class="mt-5 flex items-center gap-2">
@@ -682,22 +681,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:ml-[48px] ml-10 mt-10 lg:mt-0 w-[25%]">
-                    <h3 class="font-[500] text-[24px] text-[#D8E9A8] halyardDisplay_font mb-4">Join our NewLetter Now!</h3>
-                    <div class="mt-[20px] flex flex-col lg:flex-row">
-                        <div class=" mx-2 lg:mx-0 border border-[#FFFFFF1A] rounded-[50px] lg:w-[450px] h-[75px] lg:h-[95px] flex items-center justify-between focus-within:border-[#424B5C] transition-colors duration-300">
-                            <input type="email" placeholder="Enter Your Email" class="w-full h-full bg-transparent text-[#FFFFFF66] font-[400] text-[16px] leading-[24px] pl-[42px] rounded-[50px] outline-none border-none focus:outline-none" />
-                        </div>
-                    </div>
-                <button class="bg-[#D8E9A8] p-3 rounded-md ml-5 mt-5 cursor-pointer hover:bg-transparent border-2 border-transparent hover:border-[#D8E9A8] hover:text-[#D8E9A8]">Subscribe</button>
-                </div>
+               
             </div>
         </div>
     </footer>
     <!-- footer copy right section -->
     <div class="bg-[#1F1F1F]">
-        <div class="flex flex-col lg:flex-row justify-center items-center py-4 lg:py-0">
-            <h4 class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] text-center lg:my-[41px]"> <span class="text-[#D8E9A8]">CoderIt</span> © Copyright-2025 All Rights Reserved by CoderIT.</h4>
+        <div class="flex flex-col gap-4 lg:flex-row justify-center items-center py-4 lg:py-0">
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center lg:my-[41px]">Terms & Conditions</a>
+            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%]"></div>
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center lg:my-[41px]">Privacy Policy</a>
+            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%]"></div>
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center lg:my-[41px]">Cookies Policy</a>
         </div>
     </div>
     <!-- jquery -->
