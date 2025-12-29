@@ -251,4 +251,18 @@ background: linear-gradient(
   background-size: cover; 
 }
 
+.service_badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #D8E9A8;
+  color: #165f1d;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px; /* pill shape */
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
 
