@@ -64,36 +64,6 @@ background: linear-gradient(
   width: 24px;
 }
 
-/* banner slider btn style */
-.swiper-pagination {
-  overflow: visible !important;
-}
-
-.swiper-pagination-bullet {
-  overflow: visible;
-  position: relative;
-}
-
-.swiper-pagination-bullet{
-  width: 15px;
-  height: 15px;
-  background-color: #1E5128;
-  border-radius: 50%;
-  position: relative;
-}
-
-.swiper-pagination-bullet::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -4px;
-  width: 22px;
-  height: 22px;
-  border: 2px solid #191A19;
-  border-radius: 50%;
-  margin-right: 4px;
-}
-
 /* workflow word animation */
 @keyframes move {
   from { 
@@ -136,23 +106,34 @@ background: linear-gradient(
   width: 100%;
 }
 
-/* banner image animation */
-.swiper-slide .banner-img-left {
-  opacity: 0;
-  transform: translateX(-220px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+/* review slider btn style */
+.swiper-pagination {
+  overflow: visible !important;
 }
 
-.swiper-slide .banner-img-right {
-  opacity: 0;
-  transform: translateX(120px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+.swiper-pagination-bullet {
+  overflow: visible;
+  position: relative;
 }
 
-.swiper-slide-active .banner-img-left,
-.swiper-slide-active .banner-img-right {
-  opacity: 1;
-  transform: translateX(0);
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  background-color: #1E5128;
+  border-radius: 50%;
+  position: relative;
+}
+
+.swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -4px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #191A19;
+  border-radius: 50%;
+  margin-right: 4px;
 }
 
 /* project section */
@@ -304,5 +285,31 @@ background: linear-gradient(
   display: none;
 }
 
+#service_stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#service_stickyHeader {
+  display: none;
+}
+
+.service_banner_section {
+  position: relative;
+  overflow: hidden;
+}
+.service_banner_section::after{
+  content: "";
+  position: absolute;
+  inset: 0;           
+  background: linear-gradient(to top,rgba(211, 246, 211, 0.4), rgba(1, 101, 1, 0.107));
+  z-index: 0;
+}
+
+.service_banner_section > * {
+  position: relative;
+  z-index: 1;
+}
 
 
