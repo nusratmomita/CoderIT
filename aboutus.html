@@ -19,81 +19,98 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inter-font bg-yellow-50">
-    <header>
+    <!-- preloader -->
+    <div id="about_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
+        <div class="flex flex-col items-center gap-6">
+
+            <div class="relative w-24 h-24">
+            <span class="Glow absolute inset-0 rounded-full bg-[#014e01]/30 blur-xl animate-pulse"></span>
+
+            <span class="Outer ring absolute inset-0 rounded-full border-4 border-[#6E9EFA]/20"></span>
+
+            <span class="Spinning ring absolute inset-0 rounded-full border-4 border-[#014e01] border-t-transparent animate-spin"></span>
+
+            <span class="Center dot absolute inset-1/3 rounded-full bg-[#014e01]"></span>
+            </div>
+
+            <p class="text-[#014e01] text-sm tracking-[0.3em] uppercase animate-pulse">
+            Loading
+            </p>
+        </div>
+    </div>
+   
+    <!-- move up button -->
+    <div class="about_scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
+        <i class="fa fa-angle-up text-[#ffffff] text-[15px] group-hover:text-[#ffffff]"></i>
+    </div>
+    <!-- <h1>hi from header</h1> -->
+    <header id="about_stickyHeader">
+        <div id="about_overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
         <div class="gradient_bg">
-            <div>
-                <!-- to blur the bg -->
-                <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
-
-                <!-- logo + navlinks -->
-                <div class="container ">
-                    <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
-                        <!-- logo(main) -->
-                        <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
-                            <a href="#">
-                                <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
-                            </a>
-                            <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
-                        </div>
-
-                        <button id="hamburger" class="lg:hidden px-8 lg:px-0">
-                            <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
-                        </button>
-        
-                        <!-- navlinks -->
-                        <div class="hidden lg:block submenu">
-                            <ul class=" flex gap-[25px] justify-center items-center navLinks">
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
-                                <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
-                                <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
-                                    <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[220px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
-                                        <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- demo btn -->
-                        <button class="hidden lg:block btn_style">Get a Demo</button>
+            <div class="container">
+                <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
+                    <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
+                        <a href="#">
+                            <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
+                        </a>
+                        <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                     </div>
+
+                    <button id="about_hamburger" class="lg:hidden px-8 lg:px-0">
+                        <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
+                    </button>
+    
+                    <div class="hidden lg:block submenu">
+                        <ul class=" flex gap-[25px] justify-center items-center navLinks montserrat-font">
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
+                            <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
+                                <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[227px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
+                                    <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="hidden lg:block btn_style">Get a Demo</button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- small screen -->
-    <div id="mobileDrawer"
+    <div id="about_mobileDrawer"
         class="fixed top-0 left-0 w-[280px] h-full bg-white shadow-lg 
                 transform -translate-x-full transition-transform duration-300 
-                z-50 p-6 lg:hidden overflow-y-auto flex flex-col">
+                z-999 p-6 lg:hidden overflow-y-auto flex flex-col">
 
         <div class="flex justify-between items-center mb-4">
             <div class="flex justify-center items-center">
                 <img class="w-[80px] -ml-5" src="./assets/CoderITLogo.png" alt="logo">
                 <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
             </div>
-            <button id="mobileClose" class="text-2xl">
+            <button id="about_mobileClose" class="text-2xl">
                 <i class="fa-solid fa-xmark cursor-pointer hover:text-[#4E9F3D]"></i>
             </button>
 
         </div>
 
         <ul class="flex flex-col gap-4 font-[500] text-[#424B5C] mt-10">
-            <li><a class="hover:text-[#424B5C] text-xl font-medium" href="#">Home</a></li>
-            <li><a class="hover:text-[#424B5C] text-xl font-medium" href="#">About us</a></li>
+            <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./index.html">Home</a></li>
+            <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./aboutus.html">About us</a></li>
             <li class="group">
-                <button id="mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#424B5C] w-full cursor-pointer">
+                <button id="about_mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#424B5C] w-full cursor-pointer">
                     <span class="text-xl font-medium hover:text-[#424B5C]">Services</span>
                     <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#424B5C] rounded-[10px] p-1 cursor-pointer"></i>
                 </button>
 
-                <ul id="mobilePageNavMenu" class="hidden ml-4 mt-2">
+                <ul id="about_mobilePageNavMenu" class="hidden ml-4 mt-2">
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development<a></li>
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">App Development</a></li>
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development</a></li>
@@ -105,7 +122,6 @@
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="#">Contact</a></li>
         </ul>
 
-        <!-- demo btn -->
         <div class="mt-10 bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0 text-center">
             <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] whitespace-nowrap">Get a Demo</button>
         </div>
@@ -114,8 +130,8 @@
     <main>
         <!-- about banner section -->
         <div class="gradient_bg text-center flex flex-col justify-center items-center relative">
-            <h3 class="pt-20 text-5xl font-[600] montserrat-font text-[#165f1d]">About CoderIT</h3>
-            <div class="flex justify-center items-center gap-[20px] mt-5 pb-70">
+            <h3 class="pt-10 lg:pt-20 text-3xl lg:text-5xl font-[600] montserrat-font text-[#165f1d]">About CoderIT</h3>
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-[20px] mt-5 pb-70">
                 <div class="flex justify-center items-center gap-2">
                     <i class="fa-regular fa-circle-check text-[#165f1d]"></i>
                     <h4 class="text-xl font-[500] text-[#191A19]">Fast Delivery</h4>
@@ -129,33 +145,33 @@
                     <h4 class="text-xl font-[500] text-[#191A19]">Enthusiastic team</h4>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-[20px] absolute top-70">
-                <img class="w-[310px] h-[300px] object-cover rounded-xl" src="./assets/team1.jpg" alt="team1">
-                <img class="w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team2.jpg" alt="team2">
-                <img class="w-[310px] h-[300px] object-cover rounded-xl" src="./assets/team3.jpg" alt="team3">
-                <img class="w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team4.jpg" alt="team4">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-[20px] absolute top-70">
+                <img class="px-4 lg:px-0 w-full h-[250px] lg:w-[310px] lg:h-[300px] object-cover rounded-xl" src="./assets/team1.jpg" alt="team1">
+                <img class="hidden lg:block w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team2.jpg" alt="team2">
+                <img class="hidden lg:block w-[310px] h-[300px] object-cover rounded-xl" src="./assets/team3.jpg" alt="team3">
+                <img class="hidden lg:block w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team4.jpg" alt="team4">
             </div>
             <div>
-                <i class="fa-solid fa-ranking-star absolute top-30 left-70 text-3xl text-[#1E5128] animate-pulse"></i>
-                <i class="fa-solid fa-medal absolute top-15 right-100 text-3xl text-[#1E5128] animate-pulse"></i>
-                <i class="fa-solid fa-cubes-stacked absolute top-80 right-20 text-3xl text-[#1E5128] animate-pulse"></i>
+                <i class="hidden lg:block fa-solid fa-ranking-star absolute top-30 left-70 text-3xl text-[#1E5128] animate-pulse"></i>
+                <i class="hidden lg:block fa-solid fa-medal absolute top-15 right-100 text-3xl text-[#1E5128] animate-pulse"></i>
+                <i class="hidden lg:block fa-solid fa-cubes-stacked absolute top-40 left-5 lg:top-80 lg:left-350 text-3xl text-[#1E5128] animate-pulse"></i>
             </div>
         </div>
 
         <!-- video pop up and text -->
         <div class="container">
-            <div class="flex gap-30">
+            <div class="flex flex-col lg:flex-row gap-30">
                 <!-- left side video -->
-                <div class="lg:w-[50%] relative">
+                <div class="lg:w-[50%] relative px-4 lg:px-0">
                     <img
-                        class="h-[410px] mt-[240px] object-cover opacity-70 rounded-md border-4 border-[#1E5128]"
+                        class="h-[410px] mt-[100px] lg:mt-[240px] object-cover opacity-70 rounded-md border-4 border-[#1E5128]"
                         src="./assets/makeWorking.jpg"
                         alt="maleWorking"
                     />
 
                     <a
                         href="https://www.youtube.com/watch?v=nMfPqeZjc2c"
-                        class="video-popup absolute top-100 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        class="video-popup absolute top-60 lg:top-100 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     >
                         <div class="bg-[#D8E9A8] w-[50px] h-[50px] rounded-full flex justify-center items-center cursor-pointer">
                         <i class="fa-solid fa-play text-xl text-[#1E5128]"></i>
@@ -164,16 +180,16 @@
                 </div>
 
                 <!-- right side text -->
-                <div class="lg:w-[50%] px-4 lg:px-0 mt-20 lg:mt-[240px]">
+                <div class="lg:w-[50%] px-4 lg:px-0 -mt-10 lg:mt-[240px]">
                         <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-semibold montserrat-font leading-tight mb-4">
                             We empower your ideas into the perfect <span class="text-[#1E5128]">Digital Innovation</span>
                         </h3>
                         <div class="flex gap-3 mb-6">
-                            <div class="relative h-55 w-4px">
+                            <div class="relative h-65 lg:h-55 w-4px">
                                 <div class="decorative-line top-0 -translate-x-1/2 h-full w-px about_us_line"></div>
                             </div>
                             <div class="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
-                                <p class="mt-5">
+                                <p class="lg:mt-5">
                                     We pride ourselves on building scalable, secure, and user-friendly applications that drive real business value. We don't just write code—we craft experiences that your users will love.
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, consectetur asperiores error vel dolores, quia dicta illum cupiditate ipsam nam?
                                 </p>
@@ -198,15 +214,15 @@
         </div>
 
         <!-- services -->
-        <div class="container mb-200">
-            <div class="flex gap-30 justify-center items-center">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row lg:gap-30 justify-center items-center">
                 <!-- left side video -->
-                <div class="lg:w-[50%] mt-[220px]">
-                    <h2 class="text-4xl font-[600] text-[#191A19]">Professional Services Designed To Support Your Every Need.</h2>
-                    <p class="text-xl font-[400] text-[#191A19] mt-6">Pretium nam nullam cubilia porttitor elit sodales urna mattis suscipit euismod sem. Augue sociosqu sit nisi efficitur duis. Aenean tellus felis luctus integer ex commodo congue.</p>
+                <div class="lg:w-[50%] mt-[100px] lg:mt-[120px]">
+                    <h2 class="text-center lg:text-left text-2xl lg:text-4xl font-[600] text-[#191A19]">Professional Services Designed To Support Your Every Need.</h2>
+                    <p class="text-center lg:text-left text-center lg:text-left text-xl font-[400] text-[#191A19] mt-6">Pretium nam nullam cubilia porttitor elit sodales urna mattis suscipit euismod sem. Augue sociosqu sit nisi efficitur duis. Aenean tellus felis luctus integer ex commodo congue.</p>
                     
-                    <h3 class="text-3xl text-[#191A19] font-[600] mt-6 mb-4">Provided services</h3>
-                    <div class="flex gap-9">
+                    <h3 class="text-center lg:text-left text-3xl text-[#191A19] font-[600] mt-6 mb-4">Provided services</h3>
+                    <div class="flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start gap-9">
                         <div>
                             <div class="flex gap-2 items-center mb-3">
                                 <div class="bg-[#D8E9A8] w-[25px] h-[25px] rounded-full flex justify-center items-center">
@@ -233,7 +249,7 @@
                                 <h3 class="text-xl font-[500] text-[#191A19]">Data Analytics</h3>
                             </div>
                         </div>
-                        <div>
+                        <div class="ml-3 lg:ml-3">
                             <div class="flex gap-2 items-center mb-3">
                                 <div class="bg-[#D8E9A8] w-[25px] h-[25px] rounded-full flex justify-center items-center">
                                     <i class="fa-solid fa-check text-sm text-[#165f1d]"></i>
@@ -264,10 +280,40 @@
                 </div>
 
                 <!-- right side text -->
-                <div class="relative lg:w-[50%] px-4 lg:px-0 mt-20 lg:mt-[220px]">
+                <div class="relative lg:w-[50%] px-4 lg:px-0 mt-20 lg:mt-[0px]">
                     <div>
-                        <img src="./assets/randomImg3.png" alt="randomImg">
-                        <img class="w-[440px] h-[440px] absolute top-20 left-0" src="./assets/laptoppng.png" alt="laptop">
+                        <img class="hidden lg:block" src="./assets/randomImg3.png" alt="randomImg">
+                        <img class="lg:w-[440px] lg:h-[440px] lg:absolute top-20 left-0" src="./assets/laptoppng.png" alt="laptop">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- count down -->
+        <div id="about_stats" class="container mb-200">
+            <div class="mt-[120px] flex flex-col lg:flex-row justify-center items-center gap-[90px] bg-[#D8E9A8]/20 rounded-md border-2 border-[#191A19]/20 pl-10 pr-10 pt-15 pb-15">
+                <!-- total projects -->
+                <div>
+                    <h3 class="text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="250">0</h3>
+                    <div class="flex justify-center items-center">
+                        <i class="text-2xl text-[#165f1d] fa-solid fa-circle-check"></i>
+                        <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">Projects completed</h3>
+                    </div>
+                </div>
+                <!-- total clients -->
+                <div>
+                    <h3 class="text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="200">0</h3>
+                    <div class="flex justify-center items-center">
+                        <i class="text-2xl text-[#165f1d] fa-solid fa-earth-asia"></i>
+                        <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">World Wide Clients</h3>
+                    </div>
+                </div>
+                <!-- avg. rating -->
+                <div>
+                    <h3 class="text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="4.5">0</h3>
+                    <div class="flex justify-center items-center">
+                        <i class="text-2xl text-[#165f1d] fa-regular fa-face-smile"></i>
+                        <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">Average Rating</h3>
                     </div>
                 </div>
             </div>
@@ -397,6 +443,6 @@
     </script>
 
     <!-- connecting js -->
-    <script src="./js/script.js"></script>
+    <script src="./js/aboutScript.js"></script>
 </body>
 </html>

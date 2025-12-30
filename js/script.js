@@ -146,7 +146,6 @@ window.addEventListener("load", () => {
     document.getElementById("stickyHeader").style.display = "block";
       setTimeout(() => {
         document.getElementById("preloader").style.display = "none";
-
       }, 700);
   }, 3000);
 });

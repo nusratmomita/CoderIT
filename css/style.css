@@ -294,5 +294,15 @@ background: linear-gradient(
   display: none;
 }
 
+#about_stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#about_stickyHeader {
+  display: none;
+}
+
 
 
