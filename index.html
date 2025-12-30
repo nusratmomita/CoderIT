@@ -25,49 +25,73 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inter-font bg-yellow-50">
-    <header>
+    <div id="preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
+        <div class="flex flex-col items-center gap-6">
+
+            <div class="relative w-24 h-24">
+            <!-- Glow -->
+            <span class="absolute inset-0 rounded-full bg-[#014e01]/30 blur-xl animate-pulse"></span>
+
+            <!-- Outer ring -->
+            <span class="absolute inset-0 rounded-full border-4 border-[#6E9EFA]/20"></span>
+
+            <!-- Spinning ring -->
+            <span class="absolute inset-0 rounded-full border-4 border-[#014e01] border-t-transparent animate-spin"></span>
+
+            <!-- Center dot -->
+            <span class="absolute inset-1/3 rounded-full bg-[#014e01]"></span>
+            </div>
+
+            <p class="text-[#014e01] text-sm tracking-[0.3em] uppercase animate-pulse">
+            Loading
+            </p>
+        </div>
+    </div>
+
+    <!-- move up button -->
+    <div class="scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
+        <i class="fa fa-angle-up text-[#ffffff] text-[15px] group-hover:text-[#ffffff]"></i>
+    </div>
+    <header id="stickyHeader">
+        <!-- to blur the bg -->
+        <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+        <!-- logo + navlinks -->
         <div class="gradient_bg">
-            <div id="stickyHeader">
-                <!-- to blur the bg -->
-                <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
-
-                <!-- logo + navlinks -->
-                <div class="container ">
-                    <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
-                        <!-- logo(main) -->
-                        <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
-                            <a href="#">
-                                <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
-                            </a>
-                            <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
-                        </div>
-
-                        <button id="hamburger" class="lg:hidden px-8 lg:px-0">
-                            <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
-                        </button>
-        
-                        <!-- navlinks -->
-                        <div class="hidden lg:block submenu">
-                            <ul class=" flex gap-[25px] justify-center items-center navLinks">
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Home</a></li>
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">About us</a></li>
-                                <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
-                                    <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[220px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
-                                        <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
-                                        <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
-                                <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- demo btn -->
-                        <button class="hidden lg:block btn_style">Get a Demo</button>
+            <div class="container">
+                <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
+                    <!-- logo(main) -->
+                    <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
+                        <a href="#">
+                            <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
+                        </a>
+                        <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                     </div>
+
+                    <button id="hamburger" class="lg:hidden px-8 lg:px-0">
+                        <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
+                    </button>
+    
+                    <!-- navlinks -->
+                    <div class="hidden lg:block submenu">
+                        <ul class=" flex gap-[25px] justify-center items-center navLinks montserrat-font">
+                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
+                            <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
+                                <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[227px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
+                                    <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Blog</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- demo btn -->
+                    <button class="hidden lg:block btn_style">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -715,7 +739,7 @@
                         <div class="">
                             <h4 class="text-left text-2xl lg:text-4xl font-[600] montserrat-font text-[#014e01]">Blogs & News</h4>
                             <p class="text-left px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#191A19] mt-3">Our company recently got recognized in a local popular newspaper <span class="text-[#014e01] italic text-2xl">Prothom Alo</span></p>
-                            <p>Tow ofour bogs featured in tech section of PA</p>
+                            <p class="text-md mt-3 font-[600] text-[#165f1d]">Two of our blogs got featured in tech section of highly praised newspaper Prothom Alo. Click to read more on this and enjoy the blogs!</p>
                         </div>
                         <div class="flex gap-[30px]">
                             <!-- blog 1 -->

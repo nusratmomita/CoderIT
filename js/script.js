@@ -136,3 +136,43 @@ overlayHeader.addEventListener("click", () => {
 mobilePageNav.addEventListener("click", function() {
     mobilePageNavMenu.classList.toggle("hidden");
 })
+
+// preloader
+window.addEventListener("load", () => {
+  
+  setTimeout(() => {
+    document.getElementById("preloader").style.opacity = "0";
+    document.getElementById("preloader").style.transition = "opacity 0.7s ease";
+    document.getElementById("stickyHeader").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+
+      }, 700);
+  }, 3000);
+});
+
+// navbar + back to top button
+document.addEventListener("DOMContentLoaded", () => {
+
+  const scrollUpBtn = document.querySelector(".scroll_up");
+
+  scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  window.addEventListener("scroll", () => {
+    
+
+    if (window.scrollY > 0) {
+      scrollUpBtn.classList.remove("hidden");
+    } 
+    else {
+      scrollUpBtn.classList.add("hidden");
+    }
+  });
+
+});
+
