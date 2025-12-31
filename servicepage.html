@@ -17,7 +17,7 @@
 </head>
 <body class="inter-font bg-yellow-50">
     <!-- preloader -->
-    <div id="service_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
+    <!-- <div id="service_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
 
             <div class="relative w-24 h-24">
@@ -34,7 +34,7 @@
             Loading
             </p>
         </div>
-    </div>
+    </div> -->
    
     <!-- move up button -->
     <div class="service_scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
@@ -127,12 +127,115 @@
         <!-- about banner section -->
         <div class="bg-[url('./assets/serviceBanner.jpg')] bg-cover bg-no-repeat bg-top-right service_banner_section">
             <div class="text-center flex flex-col justify-center items-center relative pt-50 pb-50 ">
-                <h3 class="text-3xl lg:text-5xl font-[600] montserrat-font text-[#006400]">Services provided by <span class="bg-[#D8E9A8] text-[#165f1d] rounded-md p-1">CoderIT</span></h3>
+                <h3 class="text-3xl lg:text-5xl font-[600] montserrat-font textt-[#006400] text-white">Services provided by <span class="bg-[#D8E9A8] text-[#165f1d] rounded-md p-1">CoderIT</span></h3>
             
             </div>
         </div>
 
-        
+        <!-- services -->
+        <div class="lg:mt-[120px] md:mt-[60px] mt-[50px]">
+            <div class="container">
+                <div>
+                    <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#014e01]">Featured Services</h2>
+                    <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#191A19] mt-3">A wide range of services provided by CoderIT <br class="hidden lg:block"> to make your business super-hit</h4>
+                </div>
+                <div class="mt-15 grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-[30px]">
+                    <!-- web dev -->
+                    <div class="relative">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/webDevSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">We Development</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- app dev -->
+                    <div class="relative">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/appDevSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">App Development</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AI/ML dev -->
+                    <div class="relative">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/AiSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">AI/ML Engineering</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- claud dev -->
+                    <div class="relative mt-[20px]">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/CloudComputingSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Cloud Computing</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cyber Security -->
+                    <div class="relative mt-[20px]">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/webDevSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Cyber Security</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Analytics -->
+                    <div class="relative mt-[20px]">
+                        <div>
+                            <!-- icon -->
+                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/appDevSer.png" alt="webDevSer">
+                        </div>
+                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
+                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Data Analytics</h2>
+                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
+                            <div class="mb-2 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
+                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- languages -->
+        <div class="lg:mt-[120px] md:mt-[60px] mt-[50px]">
+            <div class="container">
+                
+            </div>
+        </div>
+
+
     </main>
 
     <footer class="mt-[120px] bg-[url('./assets/footerBG.jpg')] bg-cover bg-center footer_section">
