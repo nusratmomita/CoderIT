@@ -295,11 +295,21 @@ background: linear-gradient(
   display: none;
 }
 
-.service_banner_section {
+#blog_stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#blog_stickyHeader {
+  display: none;
+}
+
+.overlay_bg_color {
   position: relative;
   overflow: hidden;
 }
-.service_banner_section::after{
+.overlay_bg_color::after{
   content: "";
   position: absolute;
   inset: 0;           
@@ -307,7 +317,7 @@ background: linear-gradient(
   z-index: 0;
 }
 
-.service_banner_section > * {
+.overlay_bg_color > * {
   position: relative;
   z-index: 1;
 }
@@ -374,6 +384,10 @@ background: linear-gradient(
   background-image: url('.././assets/askQuestions.png');
   background-repeat: no-repeat;
   background-size: cover; 
+}
+
+.bg_image_padding{
+  padding: 100px 0px 50px 0px;
 }
 
 
