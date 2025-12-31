@@ -117,10 +117,9 @@
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./aboutus.html">About us</a></li>
             <li class="group">
                 <button id="mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#424B5C] w-full cursor-pointer">
-                    <span class="text-xl font-medium hover:text-[#424B5C]">Solutions</span>
+                    <a href="./servicepage.html" class="text-xl font-medium hover:text-[#424B5C]">Solutions</a>
                     <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#424B5C] rounded-[10px] p-1 cursor-pointer"></i>
                 </button>
-
                 <ul id="mobilePageNavMenu" class="hidden ml-4 mt-2">
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development<a></li>
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">App Development</a></li>
@@ -921,24 +920,24 @@
         </div>
     </main>
     
-    <footer class="bg-[url('./assets/footerBG.jpg')] bg-cover bg-center footer_section">
+    <footer class="mt-[120px] bg-[url('./assets/footerBG.jpg')] bg-cover bg-center footer_section">
         <div class="container">
             <!-- logo + links -->
             <div class="lg:mt-[95px] lg:pb-[50px] flex flex-col lg:flex-row">
-                <div class="ml-10 lg:-ml-0 mt-5 lg:mt-0 lg:w-[25%]">
-                    <div class="-ml-5 lg:-ml-10 flex justify-start items-center">
-                        <img class="w-15 h-15 lg:w-30 lg:h-30" src="./assets/coderIT.png" alt="whiteLogo">
-                        <h3 class="text-2xl font-[600] montserrat-font text-[#191A19] -ml-5 lg:-ml-10 -mt-2">CoderIT</h3>
+                <div class="ml-10 lg:-ml-0 mt-10 lg:mt-0 lg:w-[25%]">
+                    <div class="-ml-10 flex justify-start items-center">
+                        <img class="w-30 h-30" src="./assets/coderIT.png" alt="whiteLogo">
+                        <h3 class="text-2xl font-[600] montserrat-font text-[#191A19] -ml-10 -mt-2">CoderIT</h3>
                     </div>
-                    <h3 class="mt-[7px] lg:mt-[14px] font-[400] text-[14px] lg:text-[18px] text-[#191A19]">In velit arcu posuere integer. Dolor sit am,  consectetur nun adipiscing elit.</h3>
-                    <ul class="flex gap-[15px] justify-start items-center mt-[10px] lg:mt-[20px]">
+                    <h3 class="mt-[14px] font-[400] text-[16px] lg:text-[18px] text-[#191A19]">In velit arcu posuere integer. Dolor sit am,  consectetur nun adipiscing elit.</h3>
+                    <ul class="flex gap-[15px] justify-start items-center mt-[20px]">
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.telegram.com/" target="_blank"></a><i class="fa-brands fa-telegram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                     </ul>
                 </div>
-                <div class="lg:ml-[210px] ml-10 mt-5 lg:mt-0">
+                <div class="lg:ml-[210px] ml-10 mt-10 lg:mt-0">
                     <h3 class="font-[600] text-[24px] text-[#191A19] montserrat-font whitespace-nowrap">Quick Links</h3>
                     <ul class="list-none mt-5">
                         <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
@@ -961,7 +960,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lg:ml-[90px] ml-10 mt-5 lg:mt-0">
+                <div class="lg:ml-[90px] ml-10 mt-10 lg:mt-0">
                     <h3 class="font-[600] text-[24px] text-[#191A19] montserrat-font whitespace-nowrap">Hire Us</h3>
                     <ul class="list-none mt-5">
                         <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
@@ -984,7 +983,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lg:ml-[80px] ml-10 mt-5 lg:mt-0 mb-5 lg:mb-5">
+                <div class="lg:ml-[80px] ml-10 mt-10 lg:mt-0 mb-4">
                     <div>
                         <h3 class="font-[600] text-[24px] text-[#191A19] mb-[7px]">Contact info</h3>
                     </div>
@@ -1015,13 +1014,16 @@
     <!-- footer copy right section -->
     <div class="bg-[#191A19]">
         <div class="flex gap-4 lg:flex-row justify-center items-center py-4 lg:py-0">
-            <a href="#" class="font-[400] text-[13px] lg:text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center lg:my-5 whitespace-nowrap">Terms & Conditions</a>
-            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%] hidden lg:block"></div>
-            <a href="#" class="font-[400] text-[13px] lg:text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center whitespace-nowrap">Privacy Policy</a>
-            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%] hidden lg:block"></div>
-            <a href="#" class="font-[400] text-[13px] lg:text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center whitespace-nowrap">Cookies Policy</a>
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center lg:my-5">Terms & Conditions</a>
+            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%] hidden md:block lg:block"></div>
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center">Privacy Policy</a>
+            <div class="w-px h-4 bg-[#D8E9A8] rounded-[50%] hidden md:block lg:block"></div>
+            <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center">Cookies Policy</a>
         </div>
     </div>
+
+
+
     <!-- jquery -->
     <script src="./js/jquery.js"></script>
 

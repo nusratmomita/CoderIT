@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* dark green -> 014e01/191A19 , medium green -> 1E5128, light green -> 191A19 and yellowish -> D8E9A8 */
+/* dark green -> 014e01/191A19 , medium green -> 1E5128, light green -> 4E9F3D and yellowish -> D8E9A8 */
 
 :root{
   --hero-gradient-start: 85 45% 85%;
@@ -311,5 +311,70 @@ background: linear-gradient(
   position: relative;
   z-index: 1;
 }
+
+/* service page language marquee */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: 40px;
+  white-space: nowrap;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee-left .marquee-track {
+  animation-name: marquee-left;
+}
+
+.marquee-right .marquee-track {
+  animation-name: marquee-right;
+}
+
+.marquee span {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #D8E9A8;
+  font-size: clamp(20px, 2vw, 40px);
+  font-weight: 500;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Animations */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/*  ask_questions section bg */
+.ask_questions{
+  background-image: url('.././assets/askQuestions.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 
 
