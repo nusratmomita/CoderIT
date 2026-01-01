@@ -139,16 +139,16 @@
 
         <!-- search box and sort -->
         <div class="container">
-            <div class="lg:mt-[90px] md:mt-[60px] mt-[50px] flex flex-col lg:flex-row gap-90 items-start lg:items-center">
+            <div class="lg:mt-[90px] md:mt-[60px] mt-[50px] flex flex-col lg:flex-row gap-[25px] lg:gap-90 items-center lg:items-start lg:items-center">
 
                 <!-- Search box -->
-                <div class="flex items-center w-full lg:w-auto border border-[#014e01] rounded-[10px] focus-within:border-[#D8E9A8] transition-colors duration-300 overflow-hidden">
+                <div class="flex items-center w-[340px] lg:w-auto border border-[#014e01] rounded-[10px] focus-within:border-[#D8E9A8] transition-colors duration-300 overflow-hidden">
 
                     <input
                         type="text"
                         name="search"
                         placeholder="Enter blog title"
-                        class="bg-transparent h-[48px] px-4 w-full lg:w-[500px] text-black text-[16px] outline-none"
+                        class="bg-transparent h-[48px] px-4 w-[500px] text-black text-[16px] outline-none"
                     />
 
                     <!-- Desktop button -->
@@ -170,7 +170,7 @@
                 <select
                     name="sort"
                     id="sort"
-                    class="h-[48px] lg:w-[250px] px-4 border border-[#014e01] rounded-[10px] bg-white text-[#014e01] focus:outline-none focus:border-[#D8E9A8] transition-colors"
+                    class="h-[48px] w-[250px] lg:w-[250px] px-4 border border-[#014e01] rounded-[10px] bg-white text-[#014e01] focus:outline-none focus:border-[#D8E9A8] transition-colors"
                 >
                     <option disabled selected>Sort by...</option>
                     <option value="popular">Most Popular</option>
@@ -180,104 +180,263 @@
 
             </div>
             <!-- blogs -->
-            <div class="mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 gap-[20px] px-4 lg:px-0">
-                <!-- blog 3 -->
-                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden">
+            <div class="mt-10 lg:mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 gap-[20px] px-4 lg:px-0">
+                <!-- blog 1 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
                     <div class="relative group w-full overflow-hidden">
                         <img
-                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105"
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
                             src="./assets/blog3.webp"
                             alt="blogsImage"
                         />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
                     </div>
 
-                    <div class="mt-4 mb-4 text-left ml-3">
+                    <div class="mb-2 text-left ml-3 mt-3">
                         <p class="text-[18px] text-[#014e01] font-[700]">
                         Web VS App Development
                         </p>
                     </div>
                     <div class="mb-4">
-                            <h3 class="text-[16px] text-[#014e01] font-[500] ml-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique....
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
                             </h3>
-                        </div>
-                    <div class="mb-4 flex justify-start items-start ml-3">
-                        <button class="btn_style">Read More</button>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
                     </div>
                 </div>
-                <!-- blog 4 -->
-                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden">
+
+                <!-- blog 2 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
                     <div class="relative group w-full overflow-hidden">
                         <img
-                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105"
-                            src="./assets/blogsImage.webp"
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blog2.webp"
                             alt="blogsImage"
                         />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
                     </div>
 
-                    <div class="mt-4 mb-4 text-left ml-3">
+                    <div class="mb-2 text-left ml-3 mt-3">
                         <p class="text-[18px] text-[#014e01] font-[700]">
-                        Learn things faster NOW!
+                        Web VS App Development
                         </p>
                     </div>
                     <div class="mb-4">
-                            <h3 class="text-[16px] text-[#014e01] font-[500] ml-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique....
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
                             </h3>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
+                    </div>
+                </div>
+
+                <!-- blog 3 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
+                    <div class="relative group w-full overflow-hidden">
+                        <img
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blogsImage.webp"
+                            alt="blogsImage"
+                        />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
                         </div>
-                    <div class="mb-4 flex justify-start items-start ml-3">
-                        <button class="btn_style">Read More</button>
+                    </div>
+
+                    <div class="mb-2 text-left ml-3 mt-3">
+                        <p class="text-[18px] text-[#014e01] font-[700]">
+                        Web VS App Development
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
+                            </h3>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
+                    </div>
+                </div>
+
+                <!-- blog 4 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
+                    <div class="relative group w-full overflow-hidden">
+                        <img
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blog3.webp"
+                            alt="blogsImage"
+                        />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 text-left ml-3 mt-3">
+                        <p class="text-[18px] text-[#014e01] font-[700]">
+                        Web VS App Development
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
+                            </h3>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
                     </div>
                 </div>
 
                 <!-- blog 5 -->
-                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden">
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
                     <div class="relative group w-full overflow-hidden">
                         <img
-                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105"
-                            src="./assets/blog2.webp"
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blog3.webp"
                             alt="blogsImage"
                         />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
                     </div>
 
-                    <div class="mt-4 mb-4 text-left ml-3">
+                    <div class="mb-2 text-left ml-3 mt-3">
                         <p class="text-[18px] text-[#014e01] font-[700]">
-                        Prioritize your mental health
+                        Web VS App Development
                         </p>
                     </div>
                     <div class="mb-4">
-                            <h3 class="text-[16px] text-[#014e01] font-[500] ml-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique....
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
                             </h3>
-                        </div>
-                    <div class="mb-4 flex justify-start items-start ml-3">
-                        <button class="btn_style">Read More</button>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
                     </div>
                 </div>
 
                 <!-- blog 6 -->
-                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden">
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
                     <div class="relative group w-full overflow-hidden">
                         <img
-                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105"
-                            src="./assets/blogsImage.webp"
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blog2.webp"
                             alt="blogsImage"
                         />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
                     </div>
 
-                    <div class="mt-4 mb-4 text-left ml-3">
+                    <div class="mb-2 text-left ml-3 mt-3">
                         <p class="text-[18px] text-[#014e01] font-[700]">
-                        Is PHP still relevant in 2025?
+                        Web VS App Development
                         </p>
                     </div>
                     <div class="mb-4">
-                            <h3 class="text-[16px] text-[#014e01] font-[500] ml-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique....
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
                             </h3>
-                        </div>
-                    <div class="mb-4 flex justify-start items-start ml-3">
-                        <button class="btn_style">Read More</button>
                     </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
+                    </div>
+                </div>
+
+                <!-- blog 7 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
+                    <div class="relative group w-full overflow-hidden">
+                        <img
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blogsImage.webp"
+                            alt="blogsImage"
+                        />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 text-left ml-3 mt-3">
+                        <p class="text-[18px] text-[#014e01] font-[700]">
+                        Web VS App Development
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
+                            </h3>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
+                    </div>
+                </div>
+
+                <!-- blog 8 -->
+                <div class="bg-[#ffffff] shadow-md flex flex-col rounded-[15px] overflow-hidden group relative">
+                    <div class="relative group w-full overflow-hidden">
+                        <img
+                            class="w-full h-[210px] object-cover transition-transform duration-300 group-hover:scale-105 group-hover:opacity-80"
+                            src="./assets/blog3.webp"
+                            alt="blogsImage"
+                        />
+                        <div class="flex justify-start items-start opacity-0 group-hover:opacity-100 absolute top-25 left-20">
+                            <button class="read_more_btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 text-left ml-3 mt-3">
+                        <p class="text-[18px] text-[#014e01] font-[700]">
+                        Web VS App Development
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                            <h3 class="text-[16px] text-black font-[500] ml-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima error similique... <span class="cursor-pointer text-[#014e01]">Read more</span>
+                            </h3>
+                    </div>
+                    <hr class="mx-4 text-gray-400">
+                    <div class="ml-3 flex justify-between mt-4">
+                        <h4 class="mb-4 text-black font-[500] montserrat-font">12 Dec'25</h4>
+                        <h4 class="mb-4 text-black font-[500] montserrat-font mr-2">12 mins Read</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="flex gap-2 justify-center items-center mt-15">
+                <div class="bg-[#014e01] text-[#D8E9A8] rounded-md w-8 h-8 flex justify-center items-center">
+                    <i class="fa-solid fa-angle-left text-xl p-1 cursor-pointer"></i>
+                </div>
+                <div class="bg-[#014e01] text-[#D8E9A8] rounded-md w-8 h-8 flex justify-center items-center cursor-pointer">
+                    <h4>1</h4>
+                </div>
+                <div class="bg-transparent border border-[#014e01] text-[#014e01] rounded-md w-8 h-8 flex justify-center items-center cursor-pointer">
+                    <h4>2</h4>
+                </div>
+                <div class="bg-transparent border border-[#014e01] text-[#014e01] rounded-md w-8 h-8 flex justify-center items-center cursor-pointer">
+                    <h4>3</h4>
+                </div>
+                <div class="bg-[#014e01] text-[#D8E9A8] rounded-md w-8 h-8 flex justify-center items-center cursor-pointer">
+                    <i class="fa-solid fa-angle-right text-xl p-1"></i>
                 </div>
             </div>
         </div>
