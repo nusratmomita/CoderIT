@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - CoderIT</title>
+    <title>Contact Us - CoderIT</title>
 
     <!-- tailwindCSS setup -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,10 +14,11 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="inter-font bg-yellow-50">
     <!-- preloader -->
-    <div id="service_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
+    <div id="contactus_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
 
             <div class="relative w-24 h-24">
@@ -35,17 +36,20 @@
             </p>
         </div>
     </div>
-   
+
     <!-- move up button -->
-    <div class="service_scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
+    <div class="contactus_scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
         <i class="fa fa-angle-up text-[#ffffff] text-[15px] group-hover:text-[#ffffff]"></i>
     </div>
-
-    <header id="service_stickyHeader">
-        <div id="service_overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+    
+    <header id="contactus_stickyHeader">
+        <!-- to blur the bg -->
+        <div id="contactus_overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+        <!-- logo + navlinks -->
         <div class="gradient_bg">
             <div class="container">
                 <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
+                    <!-- logo(main) -->
                     <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
                         <a href="#">
                             <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
@@ -53,15 +57,16 @@
                         <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                     </div>
 
-                    <button id="service_hamburger" class="lg:hidden px-8 lg:px-0">
+                    <button id="contactus_hamburger" class="lg:hidden px-8 lg:px-0">
                         <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
                     </button>
     
+                    <!-- navlinks -->
                     <div class="hidden lg:block submenu">
                         <ul class=" flex gap-[25px] justify-center items-center navLinks montserrat-font">
                             <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
                             <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
-                            <li class="relative group"><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./servicepage.html">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
+                            <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./servicepage.html">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
                                 <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[227px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
                                     <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
                                     <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
@@ -71,10 +76,11 @@
                                 </ul>
                             </li>
                             <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./blog.html">Blog</a></li>
-                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./contactpage.html">Contact</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./contactpage.html">Contact</a></li>
                         </ul>
                     </div>
 
+                    <!-- demo btn -->
                     <button class="hidden lg:block btn_style">Get a Demo</button>
                 </div>
             </div>
@@ -82,7 +88,7 @@
     </header>
 
     <!-- small screen -->
-    <div id="service_mobileDrawer"
+    <div id="contactus_mobileDrawer"
         class="fixed top-0 left-0 w-[280px] h-full bg-white shadow-lg 
                 transform -translate-x-full transition-transform duration-300 
                 z-999 p-6 lg:hidden overflow-y-auto flex flex-col">
@@ -92,7 +98,7 @@
                 <img class="w-[80px] -ml-5" src="./assets/CoderITLogo.png" alt="logo">
                 <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
             </div>
-            <button id="service_mobileClose" class="text-2xl">
+            <button id="contactus_mobileClose" class="text-2xl">
                 <i class="fa-solid fa-xmark cursor-pointer hover:text-[#4E9F3D]"></i>
             </button>
 
@@ -102,11 +108,11 @@
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./index.html">Home</a></li>
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./aboutus.html">About us</a></li>
             <li class="group">
-                <button id="service_mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#424B5C] w-full cursor-pointer">
+                <button id="contactus_mobilePageNav" class="flex justify-between items-center gap-2 hover:text-[#424B5C] w-full cursor-pointer">
                     <a href="./servicepage.html" class="text-xl font-medium hover:text-[#424B5C]">Solutions</a>
                     <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#424B5C] rounded-[10px] p-1 cursor-pointer"></i>
                 </button>
-                <ul id="service_mobilePageNavMenu" class="hidden ml-4 mt-2">
+                <ul id="contactus_mobilePageNavMenu" class="hidden ml-4 mt-2">
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development<a></li>
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">App Development</a></li>
                     <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development</a></li>
@@ -118,6 +124,7 @@
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./contactpage.html">Contact</a></li>
         </ul>
 
+        <!-- demo btn -->
         <div class="mt-10 bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0 text-center">
             <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] whitespace-nowrap">Get a Demo</button>
         </div>
@@ -125,212 +132,83 @@
 
     <main>
         <!-- about banner section -->
-        <div class="bg-[url('./assets/serviceBanner.jpg')] bg-cover bg-no-repeat bg-center bg_image_padding overlay_bg_color">
+        <div class="bg-[url('./assets/contactusBG.jpg')] bg-right md:bg-center lg:bg-center bg-no-repeat bg-cover overlay_bg_color bg_image_padding">
             <div class="text-center flex flex-col justify-center items-center relative pt-50 pb-50 ">
-                <h3 class="text-2xl md:text-3xl lg:text-5xl font-[600] montserrat-font textt-[#006400] text-white">Services provided by <span class="bg-[#D8E9A8] text-[#165f1d] rounded-md p-1">CoderIT</span></h3>
+                <h3 class="text-2xl md:text-3xl lg:text-5xl font-[600] montserrat-font text-[#014e01]">Contact us <span class="bg-[#D8E9A8] text-[#165f1d] rounded-md p-1">@CoderIT</span></h3>
             </div>
         </div>
 
-        <!-- services -->
-        <div class="lg:mt-[120px] md:mt-[60px] mt-[50px]">
-            <div class="container">
-                <div>
-                    <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#014e01]">Featured Services</h2>
-                    <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#191A19] mt-3">A wide range of services provided by CoderIT <br class="hidden lg:block"> to make your business super-hit</h4>
-                </div>
-                <div class="px-4 lg:px-0 mt-15 grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 gap-[20px] lg:gap-[30px]">
-                    <!-- web dev -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[0px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/webDevSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">We Development</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
+        <div class="lg:mt-[90px] md:mt-[60px] mt-[50px] w-full px-4 md:px-10 lg:px-45 xl:px-30 2xl:px-60 relative flex gap-20 justify-center items-center flex-col lg:flex-none">
+            <form class="bg-white md:px-12 py-8 px-4 rounded-xl w-full border border-[#014e01] lg:-ml-80 xl:-ml-30 2xl:-ml-20">
+                <h4 class="text-3xl font-[600] text-[#014e01] pt-4 pb-4 text-center">Send us a Message</h4>
+                <div class="space-y-6 max-w-xl mx-auto">
+                    <!-- Name -->
+                    <div class="flex flex-col gap-2">
+                        <label class="font-[700]">Name</label>
+                        <input class="w-2/3 px-4 py-3 border border-[#014e01] rounded-md" />
                     </div>
-                    <!-- app dev -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[0px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/appDevSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">App Development</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- AI/ML dev -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[0px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/AiSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">AI/ML Engineering</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- claud dev -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[20px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/CloudComputingSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Cloud Computing</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cyber Security -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[20px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/webDevSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Cyber Security</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Data Analytics -->
-                    <div class="relative mt-[30px] md:mt-[25px] lg:mt-[20px]">
-                        <div>
-                            <!-- icon -->
-                            <img class="w-15 h-15 bg-[#DADD98] rounded-md p-2 absolute -top-10 left-41" src="./assets/appDevSer.png" alt="webDevSer">
-                        </div>
-                        <div class="group bg-[#D8E9A8] rounded-md text-center border border-[#014e01] flex flex-col justify-center items-center cursor-pointer">
-                            <h2 class="text-[#014e01] text-2xl font-[600] montserrat-font pt-5 pb-1">Data Analytics</h2>
-                            <p class="text-[#006400] text-md font-[400] pb-4 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut ipsam eligendi modi numquam fugiat perspiciatis aliquid illo nostrum veniam.</p>
-                            <div class="mb-4 bg-[#014e01] rounded-[50%] w-[35px] h-[35px] flex justify-center items-center group-hover:bg-transparent transition-all duration-300">
-                                <i class="fa-solid fa-arrow-right text-[#D8E9A8] group-hover:text-[#014e01]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- languages -->
-        <div class="lg:mt-[120px] md:mt-[60px] mt-[50px] bg-[#014e01]">
-            <div class="container">
-                <h3 class="text-center text-xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#D8E9A8] pt-15 lg:pb-10">Languages Covered by our <span class="bg-[#D8E9A8] text-[#014e01] rounded-md p-1">Developers</span></h3>
-                <div>
-                    <!-- Frameworks (Right <- Left) -->
-                    <div class="marquee marquee-left">
-                        <div class="marquee-track">
-                            <span>C#</span>
-                            <span>Python</span>
-                            <span>Java</span>
-                            <span>JavaScript</span>
-                            <span>Go</span>
-                            <span>PHP</span>
-    
-                            <!-- duplicate for seamless loop -->
-                            <span>C#</span>
-                            <span>Python</span>
-                            <span>Java</span>
-                            <span>JavaScript</span>
-                            <span>Go</span>
-                            <span>PHP</span>
-                        </div>
+                    <!-- Email -->
+                    <div class="flex flex-col gap-2">
+                        <label class="font-[700]">Email</label>
+                        <input class="w-2/3 px-4 py-3 border border-[#014e01] rounded-md" />
                     </div>
-    
-                    <!-- Frameworks (Right → Left) -->
-                    <div class="marquee marquee-right">
-                        <div class="marquee-track">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Spring Boot</span>
-                            <span>Django</span>
-                            <span>Laravel</span>
-                            <span>Swift</span>
-    
-                            <!-- duplicate -->
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Spring Boot</span>
-                            <span>Django</span>
-                            <span>Laravel</span>
-                            <span>Swift</span>
-                        </div>
+
+                    <!-- Message -->
+                    <div class="flex flex-col gap-2">
+                        <label class="font-[700]">Message</label>
+                        <textarea cols="6" class="w-full px-4 py-3 border border-[#014e01] rounded-md"></textarea>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- ask question -->
-        <div class="lg:mt-[120px] md:mt-[60px] mt-[50px] ask_questions">
-            <div class="container">
-                <div>
-                    <h3 class="text-center text-2xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#014e01] pt-15">Didn't find your preferred tech stack?</h3>
-                    <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#014e01] mt-3">We are always eager to answer your questions. Let us know about your queries!</h4>
+                    <!-- Submit Button --> 
+                    <div class="text-left"> 
+                        <button type="submit" class="group mb-10 cursor-pointer bg-[#014e01] text-[#D8E9A8] px-8 py-3 rounded-md transition-all duration-300 border border-transparent hover:border-[#014e01] hover:bg-transparent hover:text-[#014e01]" > 
+                            Send Message <i class="fa-solid fa-arrow-right"></i> 
+                        </button> 
+                    </div>                    
                 </div>
-                <form class="mt-8">
-                    <div class="max-w-2xl mx-auto space-y-6">
 
-                        <!-- Name + Email -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-0 lg:px-0">
+            </form>
+            <!-- contact info --> 
+            <div class="w-full lg:w-[350px] pb-5 rounded-md bg-[#D8E9A8] lg:w-[50%] border border-[#014e01] lg:absolute lg:top-3 lg:right-6 xl:right-15 2xl:right-30"> 
+                <h4 class="text-2xl font-[500] text-[#014e01] pt-4 ml-4">Hi! We always await for your questions and suggestions!</h4>
+                <div class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-1 lg:grid-rows-2 place-items-center mt-4">
+                    <div class="flex gap-2 items-center mt-4 bg-[#014e01]/50 text-white pt-3 pb-3 rounded-md w-[250px]"> 
+                            <i class="fa-solid fa-phone ml-4"></i>
                             <div>
-                                <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Enter your name"
-                                class="w-full px-4 py-3 border border-[#014e01] rounded-md focus:outline-none"
-                                />
+                                <h3 class="text-white text-xl font-[400] montserrat-font">Phone</h3> 
+                                <h3 class="text-white text-xl font-[600] montserrat-font">+123-456-780</h3> 
                             </div>
-
-                            <div>
-                                <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Enter your email"
-                                class="w-full px-4 py-3 border border-[#014e01] rounded-md focus:outline-none"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Message -->
-                        <div class="px-4 md:px-0 lg:px-0">
-                            <textarea
-                                rows="6"
-                                placeholder="Enter your questions"
-                                class="w-full px-4 py-3 border border-[#014e01] rounded-md resize-none outline-none focus:outline-none"
-                            ></textarea>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="text-center">
-                            <button
-                                type="submit"
-                                class="group mb-10 cursor-pointer bg-[#014e01] text-[#D8E9A8] px-8 py-3 rounded-md transition-all duration-300 border border-transparent hover:border-[#014e01] hover:bg-transparent hover:text-[#014e01]"
-                            >
-                                Send Message <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-
                     </div>
-                </form>
+                    <div class="flex gap-2 items-center mt-4 bg-[#014e01]/50 text-white pt-3 pb-3 rounded-md w-[250px] md:-ml-40 lg:-ml-0"> 
+                        <i class="fa-solid fa-paper-plane ml-4"></i>
+                        <div>
+                            <h3 class="text-white text-xl font-[400] montserrat-font">Email</h3> 
+                            <h3 class="text-white text-xl font-[600] montserrat-font">help@coderIt.com</h3> 
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center mt-4 bg-[#014e01]/50 text-white pt-3 pb-3 rounded-md w-[250px]"> 
+                        <i class="fa-solid fa-house ml-4"></i>
+                        <div>
+                            <h3 class="text-white text-xl font-[400] montserrat-font">Address</h3> 
+                            <h3 class="text-white text-xl font-[600] montserrat-font">ABC Tower, NYC</h3> 
+                        </div>
+                    </div>
+                </div> 
+                <hr class="mt-8 mx-4">
+                <div>
+                    <h4 class="text-xl font-[500] text-[#014e01] pt-4 ml-4">Connect with us</h4>
+                    <ul class="flex lg:gap-[15px] justify-start items-center mt-[5px] lg:ml-5">
+                        <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
+                        <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
+                        <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
+                        <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.telegram.com/" target="_blank"></a><i class="fa-brands fa-telegram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
+                        <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.telegram.com/" target="_blank"></a><i class="fa-solid fa-phone text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </main>
 
     <footer class="mt-[120px] bg-[url('./assets/footerBG.jpg')] bg-cover bg-center footer_section">
@@ -433,6 +311,6 @@
     </div>
 
     <!-- connecting js -->
-    <script src="./js/service.js"></script>
+    <script src="./js/contactus.js"></script>
 </body>
 </html>

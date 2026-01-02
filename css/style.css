@@ -305,6 +305,16 @@ background: linear-gradient(
   display: none;
 }
 
+#contactus_stickyHeader {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#contactus_stickyHeader {
+  display: none;
+}
+
 .overlay_bg_color {
   position: relative;
   overflow: hidden;
