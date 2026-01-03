@@ -20,7 +20,7 @@
 </head>
 <body class="inter-font bg-yellow-50">
     <!-- preloader -->
-    <div id="about_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
+    <!-- <div id="about_preloader" class="fixed inset-0 z-999 flex items-center justify-center bg-white">
         <div class="flex flex-col items-center gap-6">
 
             <div class="relative w-24 h-24">
@@ -37,18 +37,21 @@
             Loading
             </p>
         </div>
-    </div>
+    </div> -->
 
     <!-- move up button -->
     <div class="about_scroll_up hidden group bg-[#014e01] hover:bg-[#014e01] hover:border-2 hover:border-[#ffffff] hover:rounded-md w-[50px] h-[50px] rounded-full flex justify-center items-center fixed bottom-5 right-5 cursor-pointer z-50">
         <i class="fa fa-angle-up text-[#ffffff] text-[15px] group-hover:text-[#ffffff]"></i>
     </div>
 
-    <header id="about_stickyHeader">
-        <div id="about_overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+    <header id="stickyHeader">
+        <!-- to blur the bg -->
+        <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+        <!-- logo + navlinks -->
         <div class="gradient_bg">
             <div class="container">
                 <div class="flex lg:gap-30 justify-between lg:justify-between lg:items-center">
+                    <!-- logo(main) -->
                     <div class="flex justify-center items-center cursor-pointer lg:-ml-6">
                         <a href="#">
                             <img  class="CoderITMainLogo w-20 h-20 mt-2" src="./assets/coderIT.png" alt="CoderITMainLogo">
@@ -56,14 +59,15 @@
                         <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                     </div>
 
-                    <button id="about_hamburger" class="lg:hidden px-8 lg:px-0">
+                    <button id="hamburger" class="lg:hidden px-8 lg:px-0">
                         <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
                     </button>
     
+                    <!-- navlinks -->
                     <div class="hidden lg:block submenu">
                         <ul class=" flex gap-[25px] justify-center items-center navLinks montserrat-font">
-                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
-                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
                             <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./servicepage.html">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
                                 <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[227px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
                                     <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
@@ -78,7 +82,8 @@
                         </ul>
                     </div>
 
-                    <button class="hidden lg:block btn_style">Get a Demo</button>
+                    <!-- demo btn -->
+                    <button class="hidden lg:block btn_style mx-0 md:mx-0 lg:mx-2">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -145,20 +150,16 @@
                 </div>
             </div>
             <div class="flex flex-col lg:flex-row justify-center items-center gap-[20px] absolute top-70">
-                <img class="px-4 lg:px-0 w-full h-[250px] lg:w-[310px] lg:h-[300px] object-cover rounded-xl" src="./assets/team1.jpg" alt="team1">
-                <img class="hidden lg:block w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team2.jpg" alt="team2">
-                <img class="hidden lg:block w-[310px] h-[300px] object-cover rounded-xl" src="./assets/team3.jpg" alt="team3">
-                <img class="hidden lg:block w-[210px] h-[210px] object-cover rounded-xl" src="./assets/team4.jpg" alt="team4">
-            </div>
-            <div>
-                <i class="hidden lg:block fa-solid fa-ranking-star absolute top-30 left-70 text-3xl text-[#1E5128] animate-pulse"></i>
-                <i class="hidden lg:block fa-solid fa-medal absolute top-15 right-100 text-3xl text-[#1E5128] animate-pulse"></i>
+                <img class="w-full h-[250px] lg:w-[200px] lg:h-[250px] xl:w-[310px] xl:h-[300px] object-cover rounded-xl" src="./assets/team1.jpg" alt="team1">
+                <img class="hidden lg:block lg:w-[250px] lg:h-[200px] xl:w-[210px] xl:h-[210px] object-cover rounded-xl" src="./assets/team2.jpg" alt="team2">
+                <img class="hidden lg:block lg:w-[250px] lg:h-[250px] xl:w-[310px] xl:h-[300px] object-cover rounded-xl" src="./assets/team3.jpg" alt="team3">
+                <img class="hidden lg:block lg:w-[200px] lg:h-[200px] xl:w-[210px] xl:h-[210px] object-cover rounded-xl" src="./assets/team4.jpg" alt="team4">
             </div>
         </div>
 
         <!-- video pop up and text -->
         <div class="container">
-            <div class="flex flex-col lg:flex-row gap-30 justify-center items-center">
+            <div class="flex flex-col lg:flex-row gap-30 justify-center items-center lg:px-4">
                 <!-- left side video -->
                 <div class="lg:w-[50%] relative px-4 lg:px-0">
                     <img
@@ -172,7 +173,7 @@
                         class="video-popup absolute top-60 lg:top-100 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     >
                         <div class="bg-[#D8E9A8] w-[50px] h-[50px] rounded-full flex justify-center items-center cursor-pointer">
-                        <i class="fa-solid fa-play text-xl text-[#1E5128]"></i>
+                            <i class="fa-solid fa-play text-xl text-[#1E5128]"></i>
                         </div>
                     </a>
                 </div>
@@ -193,7 +194,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex flex-col lg:flex-row gap-4 lg:-ml-1">
+                        <div class="grid grid-cols-2 grid-rows-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 lg:-ml-1">
                             <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
                                 <h4 class="font-[600]">Growth</h4>
                             </div>
@@ -204,7 +205,7 @@
                                 <h4 class="font-[600]">Empower</h4>
                             </div>
                             <div class="bg-[#D8E9A8] text-[#191A19] flex justify-center items-center gap-1 p-2 rounded-sm">
-                                <h4 class="font-[600]">Fruitful results</h4>
+                                <h4 class="font-[600] whitespace-nowrap">Fruitful results</h4>
                             </div>
                         </div>
                 </div>
@@ -213,7 +214,7 @@
 
         <!-- services -->
         <div class="container">
-            <div class="flex flex-col lg:flex-row lg:gap-30 justify-center items-center">
+            <div class="flex flex-col lg:flex-row lg:gap-30 justify-center items-center lg:px-4">
                 <!-- left side video -->
                 <div class="lg:w-[50%] mt-[100px] lg:mt-[120px]">
                     <h2 class="text-center lg:text-left text-2xl lg:text-4xl font-[600] text-[#191A19]">Professional Services Designed To Support Your Every Need.</h2>
@@ -290,13 +291,13 @@
         <!-- count down -->
         <div id="about_stats" class="container mb-200">
             <div class="px-4 lg:px-0">
-                <div class="mt-[120px] flex flex-col lg:flex-row justify-center items-center gap-[15px] lg:gap-[90px] bg-[#D8E9A8]/20 rounded-md border-2 border-[#191A19]/20 pl-10 pr-10 pt-15 pb-15">
+                <div class="border-4 border-red-900 md:border-purple-900 lg:border-blue-900 xl:border-green-900 2xl:border-amber-900 mt-[120px] flex flex-col lg:flex-row justify-center items-center gap-[15px] lg:gap-[90px] bg-[#D8E9A8]/20 rounded-md border-2 border-[#191A19]/20 pl-10 pr-10 pt-15 pb-15">
                     <!-- total projects -->
-                    <div>
+                    <div class="">
                         <h3 class="text-2xl lg:text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="250">0</h3>
                         <div class="flex justify-center items-center">
                             <i class="text-xl lg:text-2xl text-[#165f1d] fa-solid fa-circle-check"></i>
-                            <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">Projects completed</h3>
+                            <h3 class="text-center text-xl font-[600] montserrat-font text-[#165f1d] whitespace-nowrap">Projects completed</h3>
                         </div>
                     </div>
                     <!-- total clients -->
@@ -304,7 +305,7 @@
                         <h3 class="text-2xl lg:text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="200">0</h3>
                         <div class="flex justify-center items-center">
                             <i class="text-xl lg:text-2xl text-[#165f1d] fa-solid fa-earth-asia"></i>
-                            <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">WorldWide Clients</h3>
+                            <h3 class="text-center text-xl font-[600] montserrat-font text-[#165f1d] whitespace-nowrap">WorldWide Clients</h3>
                         </div>
                     </div>
                     <!-- avg. rating -->
@@ -312,7 +313,7 @@
                         <h3 class="text-2xl lg:text-3xl font-bold text-[#1E5128] about_counter mb-1 montserrat-font text-center" data-target="4.5">0</h3>
                         <div class="flex justify-center items-center">
                             <i class="text-xl lg:text-2xl text-[#165f1d] fa-regular fa-face-smile"></i>
-                            <h3 class="text-xl font-[600] montserrat-font text-[#165f1d]">Average Rating</h3>
+                            <h3 class="text-center text-xl font-[600] montserrat-font text-[#165f1d] whitespace-nowrap">Average Rating</h3>
                         </div>
                     </div>
                 </div>
@@ -322,22 +323,22 @@
 
     <footer class="mt-[120px] bg-[url('./assets/footerBG.jpg')] bg-cover bg-center footer_section">
         <div class="container">
-            <!-- logo + links -->
             <div class="lg:mt-[95px] lg:pb-[50px] flex flex-col lg:flex-row">
+                <!-- logo + links -->
                 <div class="ml-10 lg:-ml-0 mt-10 lg:mt-0 lg:w-[25%]">
                     <div class="-ml-10 flex justify-start items-center">
                         <img class="w-30 h-30" src="./assets/coderIT.png" alt="whiteLogo">
                         <h3 class="text-2xl font-[600] montserrat-font text-[#191A19] -ml-10 -mt-2">CoderIT</h3>
                     </div>
-                    <h3 class="mt-[14px] font-[400] text-[16px] lg:text-[18px] text-[#191A19]">In velit arcu posuere integer. Dolor sit am,  consectetur nun adipiscing elit.</h3>
-                    <ul class="flex gap-[15px] justify-start items-center mt-[20px]">
+                    <h3 class="font-[400] text-[16px] lg:text-[18px] text-[#191A19] lg:-mt-7 lg:ml-2">Get the best software solutions for your business @CoderIT</h3>
+                    <ul class="flex gap-[15px] justify-start items-center mt-[20px] lg:mt-5">
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.facebook.com/" target="_blank"></a><i class="group fa-brands fa-facebook text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://x.com/" target="_blank"></a><i class="fa-brands fa-x-twitter text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.instagram.com/" target="_blank"></a><i class="fa-brands fa-instagram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                         <li class="group hover:bg-transparent border-2 border-transparent hover:border-[#191A19] rounded-[5px] pt-[14px] pb-[13px] pl-[13px] pr-[14px] transition-all cursor-pointer flex justify-center items-center"><a href="https://www.telegram.com/" target="_blank"></a><i class="fa-brands fa-telegram text-[#191A19] text-[18px] group-hover:text-[#191A19]"></i></li>
                     </ul>
                 </div>
-                <div class="lg:ml-[210px] ml-10 mt-10 lg:mt-0">
+                <div class="lg:ml-[90px] ml-10 mt-10 lg:mt-0">
                     <h3 class="font-[600] text-[24px] text-[#191A19] montserrat-font whitespace-nowrap">Quick Links</h3>
                     <ul class="list-none mt-5">
                         <li class="mb-[14px] flex items-center hover:gap-3 group transition-all duration-300">
@@ -380,7 +381,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lg:ml-[80px] ml-10 mt-10 lg:mt-0 ">
+                <div class="lg:ml-[80px] ml-10 mt-10 lg:mt-0 mb-4">
                     <div>
                         <h3 class="font-[600] text-[24px] text-[#191A19] mb-[7px]">Contact info</h3>
                     </div>
