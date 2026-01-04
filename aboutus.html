@@ -43,9 +43,9 @@
         <i class="fa fa-angle-up text-[#ffffff] text-[15px] group-hover:text-[#ffffff]"></i>
     </div>
 
-    <header id="stickyHeader">
+    <header id="about_stickyHeader">
         <!-- to blur the bg -->
-        <div id="overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+        <div id="about_overlayHeader" class="block lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
         <!-- logo + navlinks -->
         <div class="gradient_bg">
             <div class="container">
@@ -58,22 +58,22 @@
                         <h2 class="text-2xl font-[600] montserrat-font text-[#014e01] -ml-5">CoderIT</h2>
                     </div>
 
-                    <button id="hamburger" class="lg:hidden px-8 lg:px-0">
+                    <button id="about_hamburger" class="lg:hidden px-8 lg:px-0">
                         <i class="fa-solid fa-bars text-xl text-[#424B5C] hover:text-[#4E9F3D] cursor-pointer"></i>
                     </button>
     
                     <!-- navlinks -->
                     <div class="hidden lg:block submenu">
                         <ul class=" flex gap-[25px] justify-center items-center navLinks montserrat-font">
-                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
-                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./index.html">Home</a></li>
+                            <li><a class="text-[#191A19] font-[500] text-[20px] underline leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./aboutus.html">About us</a></li>
                             <li class="relative group"><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./servicepage.html">Solutions<i class="fa-solid fa-angle-down ml-1"></i></a>
                                 <ul class="hidden group-hover:block gap-20 bg-[#ffffff] p-4 absolute top-full left-0 w-[227px] shadow-md border border-gray-100 text-left z-50 rounded-sm nestedLink">
-                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Web Development</a></li>
-                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">App Development</a></li>
-                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">Digital Marketing</a></li>
-                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">UI/UX Design</a></li>
-                                    <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/Glenic/">AI, ML & IoT Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/CoderIT/">Web Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/CoderIT/">App Development</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/CoderIT/">Digital Marketing</a></li>
+                                    <li class="mb-4"><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/CoderIT/">UI/UX Design</a></li>
+                                    <li><a class="dropdown_menu text-[#191A19] hover:text-[#1E5128] whitespace-nowrap font-[500] text-md transition-colors duration-300" href="https://nusratmomita.github.io/CoderIT/">AI, ML & IoT Development</a></li>
                                 </ul>
                             </li>
                             <li><a class="text-[#191A19] font-[500] text-[18px] leading-none hover:text-[#1E5128] cursor-pointer transition-all duration-300" href="./blog.html">Blog</a></li>
@@ -82,7 +82,7 @@
                     </div>
 
                     <!-- demo btn -->
-                    <button class="hidden lg:block btn_style mx-0 md:mx-0 lg:mx-2">Get a Demo</button>
+                    <button class="hidden lg:block btn_style">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -114,17 +114,18 @@
                     <i class="fa-solid fa-angle-down hover:text-white hover:bg-[#424B5C] rounded-[10px] p-1 cursor-pointer"></i>
                 </button>
                 <ul id="about_mobilePageNavMenu" class="hidden ml-4 mt-2">
-                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development<a></li>
-                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">App Development</a></li>
-                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">Web Development</a></li>
-                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">UI/UX Design</a></li>
-                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="#">AI, ML & IoT Development</a></li>
+                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="https://nusratmomita.github.io/CoderIT/">Web Development</a></li>
+                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="https://nusratmomita.github.io/CoderIT/">App Development</a></li>
+                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="https://nusratmomita.github.io/CoderIT/">Digital Marketing</a></li>
+                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="https://nusratmomita.github.io/CoderIT/">UI/UX Design</a></li>
+                    <li><a class="block py-1 hover:text-[#424B5C] pl-3 rounded-[5px]" href="https://nusratmomita.github.io/CoderIT/">AI, ML & IoT Development</a></li>
                 </ul>
             </li>
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./blog.html">Blog</a></li>
             <li><a class="hover:text-[#424B5C] text-xl font-medium" href="./contactpage.html">Contact</a></li>
         </ul>
 
+        <!-- demo btn -->
         <div class="mt-10 bg-[#191A19] rounded-[35px] hover:bg-transparent border border-transparent hover:border-[#191A19] mr-5 lg:mr-0 text-center">
             <button class="text-[#D8E9A8] px-8 py-1.5 cursor-pointer hover:text-[#191A19] whitespace-nowrap">Get a Demo</button>
         </div>
@@ -418,6 +419,7 @@
             <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center">Cookies Policy</a>
         </div>
     </div>
+
 
     <!-- for video pop up -->
     <script src="./js/jquery.js"></script>
