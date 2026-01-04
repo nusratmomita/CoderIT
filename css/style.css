@@ -401,39 +401,5 @@ background: linear-gradient(
   padding: 100px 0px 50px 0px;
 }
 
-/* read_more_btn style */
-.read_more_btn{
-  background-color: #191A19;
-  color: #D8E9A8;
-  padding: 6px 32px;
-  border-radius: 35px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #191A19;
-  z-index: 1; /* creates stacking context */
-}
-
-.read_more_btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0%;
-  height: 100%;
-  background: #D8E9A8;
-  transition: width 0.25s ease-in-out;
-  z-index: -1; 
-  border-radius: inherit;
-}
-
-.read_more_btn:hover::after {
-  width: 100%;
-}
-
-.read_more_btn:hover {
-  color: #191A19;
-}
-
 
 
