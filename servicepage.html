@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/fontawesome.min.css">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -138,7 +141,7 @@
                     <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#014e01]">Featured Services</h2>
                     <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#191A19] mt-3">A wide range of services provided by CoderIT <br class="hidden lg:block"> to make your business super-hit</h4>
                 </div>
-                <div class="px-4 lg:px-4 mt-15 grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-[20px] lg:gap-[30px]">
+                <div class="px-4 lg:px-4 mt-15 grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-[20px] lg:gap-[30px] wow animate__animated animate__fadeInUp">
                     <!-- web dev -->
                     <div class="relative mt-[30px] md:mt-[25px] lg:mt-[0px]">
                         <div>
@@ -230,7 +233,7 @@
         <!-- languages -->
         <div class="lg:mt-[120px] md:mt-[60px] mt-[50px] bg-[#014e01]">
             <div class="container">
-                <h3 class="text-center text-xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#D8E9A8] pt-15 lg:pb-10">Languages Covered by our <span class="bg-[#D8E9A8] text-[#014e01] rounded-md p-1">Developers</span></h3>
+                <h3 class="text-center text-xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#D8E9A8] pt-15 lg:pb-10 wow animate__animated animate__fadeInDown">Languages Covered by our <span class="bg-[#D8E9A8] text-[#014e01] rounded-md p-1">Developers</span></h3>
                 <div>
                     <!-- Frameworks (Right <- Left) -->
                     <div class="marquee marquee-left">
@@ -278,7 +281,7 @@
         <!-- ask question -->
         <div class="lg:mt-[120px] md:mt-[60px] mt-[50px] ask_questions">
             <div class="container">
-                <div>
+                <div class=" wow animate__animated animate__fadeInUp">
                     <h3 class="text-center text-2xl md:text-3xl lg:text-4xl font-[600] montserrat-font text-[#014e01] pt-15">Didn't find your preferred tech stack?</h3>
                     <h4 class="text-center px-2 lg:px-0 text-md lg:text-xl font-[500] text-[#014e01] mt-3">We are always eager to answer your questions. Let us know about your queries!</h4>
                 </div>
@@ -431,6 +434,13 @@
             <a href="#" class="font-[400] text-[16px] leading-[30px] text-[#FFFFFF99] hover:text-[#D8E9A8] text-center">Cookies Policy</a>
         </div>
     </div>
+
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init()
+    </script>
 
     <!-- connecting js -->
     <script src="./js/service.js"></script>
